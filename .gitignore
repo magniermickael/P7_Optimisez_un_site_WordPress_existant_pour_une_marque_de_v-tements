@@ -1,0 +1,16 @@
+# Ignorer le cœur de WordPress
+/wp-admin/
+/wp-includes/
+/wp-*.php
+
+# Ignorer les plugins et les uploads
+/wp-content/plugins/
+/wp-content/uploads/
+
+# Ignorer les fichiers de config sensibles
+wp-config.php
+.env
+
+# Ignorer d’autres fichiers temporaires ou de log
+*.log
+*.sql
