@@ -22,7 +22,7 @@
 				
 			<!-- Mobile Menu Button -->
 			<span class="mobile-menu-btn">
-				<i class="fa fa-bars"></i>
+				<i class="fa-solid fa-bars"></i>
 			</span>
 
 			<?php

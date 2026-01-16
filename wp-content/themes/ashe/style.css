@@ -1,13 +1,13 @@
 /*
 Theme Name: Ashe
-Theme URI: https://wp-royal.com/themes/item-ashe-free/
+Theme URI: https://wp-royal-themes.com/themes/item-ashe-free/
 Author: WP Royal
-Author URI: https://wp-royal.com/
-Description: Personal and Multi-Author Free WordPress Blog Theme. Perfect for personal, lifestyle, health & fitness, food, cooking, bakery, travel, beauty, fashion, wedding, photography, news, quotes blog, auto blog, small business website and any other kind of amazing blogs. Minimal, elegant & mobile friendly layout with WooCommerce shop (storefront) support will WOW and inspire your visitors. Well documented and very easy to use even for WordPress beginners. Clean and Modern Responsive design will perfectly showcase your content on any device, even on tablet, mobile & retina displays. Very fast, compatibility with many popular plugins & of course translation & RTL (right to left language) ready, coded with best SEO practices. The theme has features like Text & Image logo, Fullscreen Slider, Header image, Instagram slider widget support, footer menu support, GDPR compatibility plugins support and many more. Works perfectly with all major drag and drop page builders like Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi. You just need to write and be awesome! TEMPLATE DEMO: https://wp-royal.com/themes/ashe-free/demo/
-Version: 2.195
+Author URI: https://wp-royal-themes.com/
+Description: Personal and Multi-Author Free WordPress Blog Theme. Perfect for personal, lifestyle, health & fitness, food, cooking, bakery, travel, beauty, fashion, wedding, photography, news, quotes blog, auto blog, small business website and any other kind of amazing blogs. Minimal, elegant & mobile friendly layout with WooCommerce shop (storefront) support will WOW and inspire your visitors. Well documented and very easy to use even for WordPress beginners. Clean and Modern Responsive design will perfectly showcase your content on any device, even on tablet, mobile & retina displays. Very fast, compatibility with many popular plugins & of course translation & RTL (right to left language) ready, coded with best SEO practices. The theme has features like Text & Image logo, Fullscreen Slider, Header image, Instagram slider widget support, footer menu support, GDPR compatibility plugins support and many more. Works perfectly with all major drag and drop page builders like Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi. You just need to write and be awesome! TEMPLATE DEMO: https://ashe-free.wp-royal-themes.com/demo/
+Version: 2.264
 Requires at least: 4.7
 Requires PHP: 5.2.4
-Tested up to: 5.9.3
+Tested up to: 6.9
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Text Domain: ashe
@@ -153,7 +153,7 @@ audio:not([controls]) {
   height: 0;
 }
 
-img {
+img:not(#pixel12go) {
   display: block;
   border-style: none;
 }
@@ -756,13 +756,6 @@ sup {
 .top-bar-socials a:first-child {
   margin-left: 0;
 }
-
-/* Elementor FontAwesome Fix */
-.top-bar-socials a i {
-  font-family: FontAwesome !important;
-  font-weight: 400 !important;
-}
-
 
 /*--------------------------------------------------------------
 4.0 Page Header
@@ -1432,7 +1425,7 @@ sup {
   position: relative;
   margin-bottom: 18px;
 }
- 
+
 .post-media > a {
   display: block;
   position: absolute;
@@ -1596,8 +1589,8 @@ sup {
 
 /* 10.1 List layout  */
 .blog-grid {
-   padding-left: 0 !important; 
-   list-style: none !important; 
+  padding-left: 0 !important;
+  list-style: none !important;
 }
 
 [data-layout*="list"] .blog-grid > li {
@@ -2198,6 +2191,16 @@ sup {
   text-transform: uppercase;
 }
 
+.comments-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
 
 /*--------------------------------------------------------------
 13.0 Default Gallery
@@ -2344,7 +2347,7 @@ body:not(.elementor-page) .gallery-item {
 }
 
 .widget_recent_entries ul li span {
-   font-size: 12px;
+  font-size: 12px;
 }
 
 .widget_recent_comments li,
@@ -2652,14 +2655,36 @@ body:not(.elementor-page) .gallery-item {
     display: none !important;
 }
 
-/* MailPoet Widgets */
+/* Mailchimp & MailPoet Widgets */
+.mc4wp-form-fields,
 .widget_wysija_cont {
-  padding: 40px 30px;
+  padding: 35px 30px 40px;
   background: #f7f7f7;
 }
 
-.widget_wysija {
-  width: 100%;
+.ashe-subscribe-text {
+  text-align: center;
+}
+
+.ashe-subscribe-text h4 {
+  font-size: 17px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ashe-subscribe-text h4:before {
+  font-family: "fontello";
+  content: "\e802";
+  font-weight: 400;
+  font-size: 17px;
+  margin-right: 7px;
+}
+
+.ashe-subscribe-text p {
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 20px !important;
 }
 
 .mc4wp-error {
@@ -2671,6 +2696,27 @@ body:not(.elementor-page) .gallery-item {
   width: 160px;
 }
 
+.mc4wp-form-fields label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.mc4wp-form-fields input[type="submit"] {
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.mc4wp-form-fields p:last-of-type {
+  margin: 0;  
+}
+
+.widget_wysija {
+  width: 100%;
+}
+
 .widget_wysija label {
   margin-bottom: 10px;
 }
@@ -2678,7 +2724,6 @@ body:not(.elementor-page) .gallery-item {
 .widget_wysija input[type="submit"] {
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 2px;
   margin-top: 12px;
   border: none;
   cursor: pointer;
@@ -2694,7 +2739,6 @@ body:not(.elementor-page) .gallery-item {
 .widget_wysija_cont .updated,
 .widget_wysija_cont .error,
 .widget_wysija_cont .xdetailed-errors {
-  font-family: 'Open Sans';
   padding: 9px;
 }
 
@@ -2715,11 +2759,11 @@ body:not(.elementor-page) .gallery-item {
 .wpcf7 input[type="text"],
 .wpcf7 input[type="email"],
 .wpcf7 input[type="url"] {
- width: 60%;
+  width: 60%;
 }
 
 .wpcf7 input[type="number"] {
-   width: 60px;
+  width: 60px;
 }
 
 .wpcf7 input[type="tel"],
@@ -2828,7 +2872,7 @@ body:not(.elementor-page) .gallery-item {
   position: fixed;
   bottom: 65px;
   right: 80px;
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
   z-index: 20;
 }

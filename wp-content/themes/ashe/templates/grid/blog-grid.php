@@ -30,7 +30,7 @@
 				
 				<div class="post-media">
 					<a href="<?php echo esc_url( get_permalink() ); ?>"></a>
-					<?php the_post_thumbnail('full'); ?>
+					<?php the_post_thumbnail('ashe-full-thumbnail'); ?>
 				</div>
 
 				<header class="post-header">
@@ -47,7 +47,7 @@
 
 					<?php if ( get_the_title() ) : ?>
 					<h2 class="post-title">
-						<a href="<?php esc_url( the_permalink() ); ?>"><?php the_title(); ?></a>
+						<a href="<?php echo esc_url( get_the_permalink() ); ?>"><?php the_title(); ?></a>
 					</h2>
 					<?php endif; ?>
 

@@ -31,7 +31,7 @@
 		<div class="main-nav-icons">
 			<?php if ( ashe_options( 'skins_dark_mode' ) === true && 'dark' !== ashe_options( 'skins_select' ) ) : ?>
 				<div class="dark-mode-switcher">
-					<i class="fa fa-moon-o" aria-hidden="true"></i>
+					<i class="fa-regular fa-moon" aria-hidden="true"></i>
 
 					<?php if ( current_user_can('manage_options') ) : ?>
 					<div class="dark-mode-admin-notice"><?php esc_html_e( 'To disable this option, navigate to Appearance > Customize > Skins section and uncheck "Dark Mode Switcher" option. Only logged-in admin level users can see this notice!', 'ashe' ); ?></div>
@@ -41,8 +41,8 @@
 
 			<?php if ( ashe_options( 'main_nav_show_search' ) === true ) : ?>
 			<div class="main-nav-search">
-				<i class="fa fa-search"></i>
-				<i class="fa fa-times"></i>
+				<i class="fa-solid fa-magnifying-glass"></i>
+				<i class="fa-solid fa-xmark"></i>
 				<?php get_search_form(); ?>
 			</div>
 			<?php endif; ?>
@@ -66,7 +66,7 @@
 			<?php
 
 			if ( 'chevron-down' === ashe_options('responsive_menu_icon') ) {
-				echo '<i class="fa fa-chevron-down"></i>';
+				echo '<i class="fa-solid fa-chevron-down"></i>';
 			} else {
 				echo '<a>'. esc_html( ashe_options('responsive_mobile_icon_text') ) .'</a>';
 			}
