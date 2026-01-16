@@ -611,6 +611,10 @@ function ashe_true_false( $option ) {
 				width: 100%;
 			}
 
+			[data-layout*="list"] .blog-grid .has-post-thumbnail .post-media img {
+				width: 100%;
+			}
+
 			[data-layout*="list"] .blog-grid .has-post-thumbnail .post-content-wrap {
 				width: calc(100% - 300px);
 				width: -webkit-calc(100% - 300px);

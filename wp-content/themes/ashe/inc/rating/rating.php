@@ -70,7 +70,7 @@ class asheRatingNotice {
                                 <a href="https://wordpress.org/support/theme/ashe/reviews/#new-post" target="_blank" class="ashe-you-deserve-it button button-primary">OK, you deserve it!</a>
                                 <a class="ashe-maybe-later"><span class="dashicons dashicons-clock"></span> Maybe Later</a>
                                 <a class="ashe-already-rated"><span class="dashicons dashicons-yes"></span> I Already did</a>
-                                <a href="https://wp-royal.com/contact/#!/cform" target="_blank" class="ashe-need-support"><span class="dashicons dashicons-sos"></span> I need support!</a>
+                                <a href="https://wp-royal-themes.com/contact/#!/cform" target="_blank" class="ashe-need-support"><span class="dashicons dashicons-sos"></span> I need support!</a>
                                 <a class="ashe-notice-dismiss-2"><span class="dashicons dashicons-thumbs-down"></span> NO, not good enough</a>
                             </p>
                         </div>

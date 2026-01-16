@@ -21,16 +21,14 @@ if ( have_comments() ) : ?>
 		<p class="fl"></p>
 		<p class="fr"></p>
 
-		<div>				
+		<div class="comments-pagination">				
 			<div class="default-previous">
-			<?php  previous_comments_link( '<i class="fa fa-long-arrow-left" ></i>&nbsp;'. esc_html__( 'Older Comments', 'ashe' )  ); ?>
+			<?php  previous_comments_link( '<i class="fa-solid fa-arrow-left-long"></i>&nbsp;'. esc_html__( 'Older Comments', 'ashe' )  ); ?>
 			</div>
 
 			<div class="default-next">
-				<?php  next_comments_link( esc_html__( 'Newer Comments', 'ashe' ) . '&nbsp;<i class="fa fa-long-arrow-right" ></i>'  ); ?>
+				<?php  next_comments_link( esc_html__( 'Newer Comments', 'ashe' ) . '&nbsp;<i class="fa-solid fa-arrow-right-long"></i>'  ); ?>
 			</div>
-			
-			<div class="clear"></div>
 		</div>
 	</div>
 <?php

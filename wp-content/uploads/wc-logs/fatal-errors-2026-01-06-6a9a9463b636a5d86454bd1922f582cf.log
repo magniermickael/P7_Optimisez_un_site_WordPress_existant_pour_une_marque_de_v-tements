@@ -1,0 +1,36 @@
+2026-01-06T12:16:49+00:00 CRITICAL Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in C:\xampp\htdocs\ChicDressing\wp-content\plugins\wysija-newsletters\helpers\file.php:161
+Stack trace:
+#0 C:\xampp\htdocs\ChicDressing\wp-content\plugins\wysija-newsletters\helpers\file.php(161): implode(Array, '|')
+#1 C:\xampp\htdocs\ChicDressing\wp-content\plugins\wysija-newsletters\core\base.php(820): WYSIJA_help_file->clear()
+#2 C:\xampp\htdocs\ChicDressing\wp-content\plugins\wysija-newsletters\helpers\cron.php(184): WYSIJA::croned_daily()
+#3 C:\xampp\htdocs\ChicDressing\wp-content\plugins\wysija-newsletters\helpers\cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 C:\xampp\htdocs\ChicDressing\wp-content\plugins\wysija-newsletters\helpers\cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 C:\xampp\htdocs\ChicDressing\wp-content\plugins\wysija-newsletters\core\base.php(1525): WYSIJA_help_cron->run()
+#6 C:\xampp\htdocs\ChicDressing\wp-includes\class-wp-hook.php(341): init_wysija_cron('')
+#7 C:\xampp\htdocs\ChicDressing\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\ChicDressing\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\ChicDressing\wp-settings.php(742): do_action('init')
+#10 C:\xampp\htdocs\ChicDressing\wp-config.php(102): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\ChicDressing\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\ChicDressing\wp-cron.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\ChicDressing\wp-content\plugins\wysija-newsletters\helpers\file.php on line 161
+
+2026-01-06T12:23:44+00:00 CRITICAL Uncaught Error: Call to undefined function opcache_reset() in C:\xampp\htdocs\ChicDressing\wp-content\plugins\nginx-helper\admin\class-fastcgi-purger.php:180
+Stack trace:
+#0 C:\xampp\htdocs\ChicDressing\wp-content\plugins\nginx-helper\admin\class-nginx-helper-admin.php(752): FastCGI_Purger->purge_all()
+#1 C:\xampp\htdocs\ChicDressing\wp-includes\class-wp-hook.php(341): Nginx_Helper_Admin->purge_all('')
+#2 C:\xampp\htdocs\ChicDressing\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\ChicDressing\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\ChicDressing\wp-includes\class-wp-admin-bar.php(80): do_action('admin_bar_init')
+#5 C:\xampp\htdocs\ChicDressing\wp-includes\admin-bar.php(49): WP_Admin_Bar->initialize()
+#6 C:\xampp\htdocs\ChicDressing\wp-includes\class-wp-hook.php(341): _wp_admin_bar_init('')
+#7 C:\xampp\htdocs\ChicDressing\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\ChicDressing\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\ChicDressing\wp-admin\admin.php(180): do_action('admin_init')
+#10 C:\xampp\htdocs\ChicDressing\wp-admin\nav-menus.php(13): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\ChicDressing\wp-content\plugins\nginx-helper\admin\class-fastcgi-purger.php on line 180
+
+2026-01-06T19:11:14+00:00 CRITICAL syntax error, unexpected token "<" CONTEXT: {"error":{"type":4,"file":"C:\xampp\htdocs\ChicDressing\wp-content\themes\chicdressing\templates\header\featured-slider.php","line":81},"remote-logging":true,"backtrace":[{"file":"C:\xampp\htdocs\ChicDressing\wp-content\plugins\woocommerce\includes\class-woocommerce.php","line":453,"function":"critical","class":"WC_Logger","type":"->"},{"function":"log_errors","class":"WooCommerce","type":"->"}]}
+2026-01-06T19:11:21+00:00 CRITICAL syntax error, unexpected token "<" CONTEXT: {"error":{"type":4,"file":"C:\xampp\htdocs\ChicDressing\wp-content\themes\chicdressing\templates\header\featured-slider.php","line":81},"remote-logging":true,"backtrace":[{"file":"C:\xampp\htdocs\ChicDressing\wp-content\plugins\woocommerce\includes\class-woocommerce.php","line":453,"function":"critical","class":"WC_Logger","type":"->"},{"function":"log_errors","class":"WooCommerce","type":"->"}]}

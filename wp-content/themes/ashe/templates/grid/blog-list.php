@@ -47,7 +47,7 @@
 
 						<?php if ( get_the_title() ) : ?>
 						<h2 class="post-title">
-							<a href="<?php esc_url( the_permalink() ); ?>"><?php the_title(); ?></a>
+							<a href="<?php echo esc_url( get_the_permalink() ); ?>"><?php the_title(); ?></a>
 						</h2>
 						<?php endif; ?>
 						
