@@ -14,7 +14,7 @@ if (is_home()) { // Si on est sur la page d'accueil
 		}// Fin activation
 
 	// SLIDER MOBILE : Chargement UNIQUEMENT sur Mobile
-		get_template_part( 'templates/header/featured', 'slider-mobile' ); 
+		get_template_part( 'templates/header/featured', 'slider-mobile' );  // Chargement du slider mobile
 	
 
 	// LIENS EN VEDETTE (Bannières) : Chargement UNIQUEMENT sur Ordinateur/Tablette
@@ -26,7 +26,7 @@ if (is_home()) { // Si on est sur la page d'accueil
 
 ?><!-- PRODUITS & FASHION MAP sur l'accueil uniquement -->
 	<div id="chic-products" class="boxed-wrapper clear-fix"> <!-- Produits -->
-		<h2 class="chic-title">Dernières pièces </h2> <!-- Titre -->
+		<h1 class="chic-title">Achat-vente de pièces de créateur à prix cassés</h1> <!-- Titre -->
 		<?php
 		// On change le nom de la clé pour forcer une nouvelle "photocopie" optimisée
 		$cache_key = 'cd_home_products_final_v4'; // Clé de cache unique pour la page d'accueil
@@ -45,14 +45,14 @@ if (is_home()) { // Si on est sur la page d'accueil
 	</div> <!-- Fin produits -->
 
 	<div id="chic-fashionweek-map" class="boxed-wrapper clear-fix"> <!-- Fashion Map -->
-		<h2 class="chic-title">La FashionMap - été 2022 </h2> <!-- Titre -->
+		<h2 class="chic-title">Marques de luxe – FashionMap été 2022</h2> <!-- Titre -->
 		<iframe 
 			class="cd-map"
 			title="Carte : Fashion Week été 2022"
-			data-src="https://www.google.com/maps/d/embed?mid=1SU-W19k76UkTXASeT7PnGAyDYCY&hl=en_US&ehbc=2E312F"
+			data-src="https://www.google.com/maps/d/embed?mid=1SU-W19k76UkTXASeT7PnGAyDYCY&ehbc=2E312F"
 			src="about:blank"
 			loading="lazy"
-			allowfullscreen=""
+			allowfullscreen="" 
 			referrerpolicy="no-referrer-when-downgrade"> <!-- Attributs pour optimiser le chargement de la carte  -->
 		</iframe>  <!-- Carte Google Maps intégrée avec chargement différé -->
 	</div> <!-- Fin Fashion Map -->
@@ -60,7 +60,7 @@ if (is_home()) { // Si on est sur la page d'accueil
 
 }// Fin is_home
 
-?>
+?> 
 
 <main id="main" role="main" class="main-content clear-fix<?php echo esc_attr(ashe_options('general_content_width')) === 'boxed' ? ' boxed-wrapper' : ''; ?>" data-layout="<?php echo esc_attr(ashe_options('general_home_layout')); ?>" data-sidebar-sticky="<?php echo esc_attr(ashe_options('general_sidebar_sticky')); ?>"> <!-- Main Content -->
 

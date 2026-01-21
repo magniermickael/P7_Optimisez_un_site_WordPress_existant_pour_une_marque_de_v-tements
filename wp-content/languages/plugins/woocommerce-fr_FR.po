@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-01-14 16:29:07+0000\n"
+"PO-Revision-Date: 2026-01-16 07:56:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5700,10 +5700,6 @@ msgstr "Une erreur est survenue lors de l’annulation %1$s : %2$s"
 msgid "Scheduled action cancelled."
 msgstr "Action planifiée annulée."
 
-#: packages/action-scheduler/classes/WP_CLI/Action/Cancel_Command.php:89
-msgid "Request to cancel scheduled actions completed."
-msgstr "Demande d’annulation des actions planifiées achevée."
-
 #: packages/action-scheduler/classes/WP_CLI/Action/Cancel_Command.php:76
 msgid "Please specify hook and/or group of actions to cancel."
 msgstr "Veuillez préciser le crochet et/ou le groupe d’actions à annuler."
@@ -5763,6 +5759,10 @@ msgstr "WP CLI"
 #: includes/emails/class-wc-email-new-order.php:78
 msgid "[{site_title}]: You've got a new order: #{order_number}"
 msgstr "[{site_title}] : Vous avez une nouvelle commande n°{order_number}"
+
+#: packages/action-scheduler/classes/WP_CLI/Action/Cancel_Command.php:89
+msgid "Request to cancel scheduled actions completed."
+msgstr "La demande d’annulation des actions planifiées est terminée."
 
 #: includes/emails/class-wc-email-failed-order.php:174
 #: templates/emails/block/admin-failed-order.php:47

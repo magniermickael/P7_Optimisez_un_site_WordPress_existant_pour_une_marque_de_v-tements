@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-01-12 14:16:00+0000\n"
+"PO-Revision-Date: 2026-01-19 12:44:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8,6 +8,11 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fr\n"
 "Project-Id-Version: MailPoet - MailPoet\n"
+
+#: lib/Automation/Engine/Registry.php:68
+msgctxt "automation template category title"
+msgid "Bookings"
+msgstr ""
 
 #: lib/EmailEditor/Integrations/MailPoet/Patterns/PatternsController.php:80
 msgid "A collection of abandoned cart email layouts."
@@ -9748,7 +9753,7 @@ msgid "Unsubscribe link"
 msgstr "Le lien du Désabonnement"
 
 #: views/emails/statsNotificationAutomatedEmails.html:27
-#: lib/Cron/Workers/StatsNotifications/AutomatedEmails.php:106
+#: lib/Cron/Workers/StatsNotifications/AutomatedEmails.php:111
 msgid "Your monthly stats are in!"
 msgstr "Vos statistiques mensuelles sont disponibles !"
 
