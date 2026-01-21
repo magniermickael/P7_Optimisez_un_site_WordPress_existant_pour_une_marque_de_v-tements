@@ -10,57 +10,516 @@ Text Domain:	 chicdressing
 */
 
 
-/*
-    Add your custom styles here
-*/
+/*--------------------------------------------------------------*/
+/* --- POLICES LOCALES (Optimisation Performance & RGPD) --- */
+/*--------------------------------------------------------------*/
 
+/* 1. Playfair Display (Titres) */
+@font-face { /* Déclaration de la police */
+    font-family: 'Playfair Display';/* Nom de la police */
+    font-style: normal; /* Style de la police */
+    font-weight: 400; /* Épaisseur normale */
+    src: url('./fonts/playfair-display-v40-latin-regular.woff2') format('woff2'); /* Chemin vers le fichier de police */
+    font-display: swap; /* Affichage swap pour de meilleures performances */
+} 
 
-body .page-content, .page-content select, .page-content input, .page-content textarea, .page-content .post-author a, .page-content .ashe-widget a, .page-content .comment-author {
-    color: #a5a5a5;
-    font-size: 12px;
-}
-
-
-body .header-logo a{
-    color: white;
-    text-shadow: 2px 3px 5px #d0527a;
-    transform: rotate(-9deg);
-}
-.text-center{
-    text-align:center;
-}
-
-.chic-bouton{
-    color: #ffffff;
-    background-color: #333333;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 12px;
-    border: none;
-    cursor: pointer;
-    padding: 12px;
-    font-size: 14px;
+/* Variante Italique */
+@font-face { /* Déclaration de la police */
+    font-family: 'Playfair Display'; /* Nom de la police */
+    font-style: normal; /* Style de la police */
+    font-weight: 700; /* Épaisseur grasse */
+    src: url('./fonts/playfair-display-v40-latin-700.woff2') format('woff2'); /* Chemin vers le fichier de police */
+    font-display: swap; /* Affichage swap pour de meilleures performances */    
 }
 
-#featured-slider{
-    margin-bottom:30px;
+/* 2. Open Sans (Texte courant) */
+@font-face { /* Déclaration de la police */
+    font-family: 'Open Sans'; /* Nom de la police */
+    font-style: normal; /* Style de la police */
+    font-weight: 400; /* Épaisseur normale */
+    src: url('./fonts/open-sans-v44-latin-regular.woff2') format('woff2'); /* Chemin vers le fichier de police */
+    font-display: swap; /* Affichage swap pour de meilleures performances */
 }
-#chic-products{
-    padding:0 40px;
+
+/* Variante Italique */
+@font-face { /* Déclaration de la police */
+    font-family: 'Open Sans'; /* Nom de la police */
+    font-style: italic; /* Style de la police */
+    font-weight: 400; /* Épaisseur normale */
+    src: url('./fonts/open-sans-v44-latin-italic.woff2') format('woff2'); /* Chemin vers le fichier de police */
+    font-display: swap; /* Affichage swap pour de meilleures performances */
 }
-.chic-title{
-    font-family: 'Kalam';
-    font-size: 52px;
-    text-decoration: inherit;
-    text-transform: uppercase;
-    transform: rotate(-2deg);
-    margin:30px 40px;
-    text-align:center;
-    color: #9d4c64 !important;
-    line-height: 48px;
+
+/* Variante Grasse */
+@font-face { /* Déclaration de la police */
+    font-family: 'Open Sans'; /* Nom de la police */
+    font-style: normal; /* Style de la police */
+    font-weight: 700; /* Épaisseur grasse */
+    src: url('./fonts/open-sans-v44-latin-700.woff2') format('woff2'); /* Chemin vers le fichier de police */
+    font-display: swap; /* Affichage swap pour de meilleures performances */
 }
-#chic-products ul.products li.product{
-    background: #f6f6f6;
-    padding-bottom: 20px;
+
+/* 3. Kalam (Signature / Logo) */
+@font-face { /* Déclaration de la police */
+    font-family: 'Kalam'; /* Nom de la police */
+    font-style: normal; /* Style de la police */
+    font-weight: 400; /* Épaisseur normale */
+    src: url('./fonts/kalam-v18-latin-regular.woff2') format('woff2'); /* Chemin vers le fichier de police */
+    font-display: swap; /* Affichage swap pour de meilleures performances */
 }
+
+/* Variante Grasse */
+@font-face { /* Déclaration de la police */
+    font-family: 'Kalam'; /* Nom de la police */
+    font-style: normal; /* Style de la police */
+    font-weight: 700; /* Épaisseur grasse */
+    src: url('./fonts/kalam-v18-latin-700.woff2') format('woff2'); /* Chemin vers le fichier de police */
+    font-display: swap; /* Affichage swap pour de meilleures performances */
+}
+
+/* 4. Font Awesome (Icônes) */
+@font-face { /* Déclaration de la police */
+    font-family: 'Font Awesome'; /* Nom de la police */
+    font-weight: 900; /* Épaisseur solide */
+    src: url('./fonts/fa-solid-900.woff2') format('woff2'); /* Chemin vers le fichier de police */
+    font-display: swap; /* Affichage swap pour de meilleures performances */
+} 
+
+/* =========================
+   TYPO : hiérarchie des titres (H1 > H2 > H3)
+   ========================= */
+
+/* Titres dans le contenu des articles/pages */
+.entry-content h1 {  /* Titre principal */
+    font-size: 2rem !important; line-height: 1.2;  /*   ~32px */
+}  
+
+/* Sous-titres */
+.entry-content h2 { 
+    font-size: 1.5rem !important; line-height: 1.25; /* ~24px */
+
+}
+
+/* Sous-sous-titres */
+.entry-content h3 { 
+    font-size: 1.25rem !important; line-height: 1.3; /* ~20px */
+}
+
+
+/* Force le menu à utiliser l'épaisseur normale (400) au lieu de sauter au gras */
+#main-nav a,
+.main-navigation a,
+#top-menu a { /* Liens du menu principal et du menu supérieur */
+    font-weight: 400 !important;  /* Épaisseur normale */
+} 
+
+/* =========================
+   TYPO : texte courant
+   ========================= */
+/* Texte principal dans le contenu des articles/pages */   
+body .page-content,
+.page-content select,
+.page-content input,
+.page-content textarea,
+.page-content .post-author a,
+.page-content .ashe-widget a,
+.page-content .comment-author { /* Liens des auteurs et widgets */
+    color: #4a4a4a;     /* beaucoup plus lisible */
+    font-size: 16px;    /* taille standard mobile-friendly */
+    line-height: 1.6; /* espacement confortable */
+}
+
+/* =========================
+   LOGO HEADER
+   ========================= */
+/* Style du logo dans l'en-tête */
+body .header-logo,
+body .header-logo a {/* Conteneur du logo et lien */
+    color: white; /* Texte blanc */
+    text-shadow: 2px 3px 5px #d0527a; /* Ombre rose */
+    transform: rotate(-9deg); /* Inclinaison */
+}
+
+/* =========================
+   BOUTONS ET TITRES
+   ========================= */
+/* Centrage du texte */
+.text-center { /* Classe de centrage */
+    text-align: center;  /* Alignement centré */
+}
+
+/* Style des boutons personnalisés */
+.chic-bouton { /* Classe de bouton */
+    color: #ffffff; /* Texte blanc */
+    background-color: #333333; /* Fond sombre */
+    font-weight: bold; /* Texte en gras */
+    text-transform: uppercase; /* Texte en majuscules */
+    letter-spacing: 2px; /* Espacement des lettres */
+    margin-top: 12px; /* Marge supérieure */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur pointeur */
+    padding: 12px; /* Espacement interne */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* =========================
+   PAGE D'ACCUEIL 
+   ========================= */
+/* Espacement du slider */
+#featured-slider { /* Conteneur du slider */
+    margin-bottom: 30px; /* Marge inférieure */
+} 
+
+/* Espacement de la grille produits */
+#chic-products { /* Conteneur des produits */
+    padding: 0 40px; /* Espacement latéral */
+}
+
+/* Titre de la section produits */
+.chic-title { /* Classe de titre */
+    font-family: 'Kalam'; /* Police manuscrite */
+    font-size: 52px; /* Taille très grande */
+    text-decoration: inherit; /* Hérite de la décoration */
+    text-transform: uppercase; /* Texte en majuscules */
+    transform: rotate(-2deg);   /* Légère inclinaison */
+    margin: 30px 40px; /* Marge autour */
+    text-align: center; /* Centré */
+    color: #9d4c64 !important; /* Couleur rose foncé */
+    line-height: 48px; /* Hauteur de ligne */
+}
+
+/* Style des produits dans la grille */
+#chic-products ul.products li.product { /* Conteneur de chaque produit */
+    background: #f6f6f6; /* Fond gris clair */
+    padding-bottom: 20px; /* Espacement inférieur */
+}
+
+/* =========================
+   SLIDER D'ACCUEIL 
+   ========================= */
+/* L'image du slider */
+#featured-slider .slider-item-bg img.cd-slide-img{ /* Image de fond du slider */
+  width: 100%; /* Pleine largeur */
+  height: 100%; /* Pleine hauteur */
+  object-fit: cover; /* Couvre le conteneur */
+  display: block; /* Affichage en bloc */
+}
+
+/* Les conteneurs du slider */
+#featured-slider .featured-slider-area,
+#featured-slider .slider-item-bg{ /* Conteneurs du slider */
+  width: 100%; /* Pleine largeur */
+  height: 100%; /* Pleine hauteur */
+}
+
+/* =========================
+   SLIDER MOBILE 
+   ========================= */
+/* Conteneur du slider mobile : caché par défaut */
+.mobile-slider-container { 
+    display: none; /* Caché par défaut */
+}
+
+/* Styles spécifiques pour les écrans mobiles */
+@media (max-width: 768px) { /* Cible les écrans de 768px et moins */
+    /* CONTENEUR PRINCIPAL */
+    .mobile-slider-container { /* Conteneur principal du slider mobile */
+        display: block !important; /* Affiché sur mobile */
+        position: relative; /* Position relative pour les éléments absolus */
+        width: 100%; /* Pleine largeur */
+        margin: 0; /* Pas de marge */
+        overflow: hidden; /* Cache le débordement */
+    }
+
+    /* CACHER LE SLIDER DE BASE */
+    #featured-slider, .featured-slider-area {  /* Cible le slider par défaut */
+        display: none !important; /* Cache le slider par défaut */ 
+    }
+
+    /* WRAPPER */
+    .mobile-slider-wrapper { /* Conteneur des slides */
+        display: flex !important; /* Utilise Flexbox */
+        flex-wrap: nowrap !important; /* Pas de retour à la ligne */
+        overflow-x: auto; /* Défilement horizontal */
+        scroll-snap-type: x mandatory; /* Snap horizontal obligatoire */
+        -webkit-overflow-scrolling: touch; /* Défilement fluide sur iOS */
+        scrollbar-width: none; /* Cache la scrollbar sur Firefox */
+        width: 100%; /* Pleine largeur */
+        height: 500px;  /* Hauteur fixe */
+        margin: 0; /* Pas de marge */
+    }
+
+    /* Cacher la scrollbar sur WebKit */
+    .mobile-slider-wrapper::-webkit-scrollbar { /* Cible la scrollbar WebKit */
+        display: none; /* Cache la scrollbar */ 
+    }
+
+    /* SLIDE */
+    .mobile-slide { /* Chaque slide */
+        flex: 0 0 100%; /* Prend toute la largeur */
+        width: 100%; /* Pleine largeur */
+        scroll-snap-align: start; /* Aligne au début */
+        position: relative; /* Position relative pour les éléments absolus */
+        height: 100%; /* Pleine hauteur */
+        overflow: hidden; /* Cache le débordement */
+    }
+
+    /* IMAGE FOND */
+    .mobile-slide .slider-item-bg { /* Conteneur de l'image de fond */
+        width: 100%; /* Pleine largeur */
+        height: 100%; /* Pleine hauteur */
+        position: absolute; /* Position absolue */
+        top: 0; left: 0; /* En haut à gauche */
+        z-index: 1; /* Au-dessus des autres éléments */
+    } 
+
+    /* Image de fond */
+    .mobile-slide .slider-item-bg img { /* Image de fond */
+        width: 100%; /* Pleine largeur */
+        height: 100%; /* Pleine hauteur */
+        object-fit: cover; /* Couvre le conteneur */
+    }
+
+    /* CENTRAGE (Table Method) */
+    .mobile-slide .cv-container { /* Conteneur de centrage */
+        position: absolute !important; /* Position absolue */
+        top: 0; left: 0; /* En haut à gauche */
+        width: 100% !important; /* Pleine largeur */
+        height: 100% !important; /* Pleine hauteur */
+        z-index: 10; /* Au-dessus de l'image */
+        background: rgba(0,0,0,0.35); /* Overlay sombre */
+    }
+
+    /* Centrage vertical et horizontal */
+    .mobile-slide .cv-outer { /* Conteneur externe */
+        display: table !important; /* Utilise le modèle table */
+        width: 100% !important; /* Pleine largeur */
+        height: 100% !important; /* Pleine hauteur */
+    }
+
+    /* Centrage vertical et horizontal */
+    .mobile-slide .cv-inner { /* Conteneur interne */
+        display: table-cell !important; /* Cellule de table */
+        vertical-align: middle !important; /* Alignement vertical */
+        text-align: center !important; /* Alignement horizontal */
+        padding: 0 20px; /* Padding latéral */
+    }
+
+    /* CONTENU DU SLIDE */
+    .mobile-slide .slider-info { /* Conteneur du contenu */
+        max-width: 100%; /* Largeur maximale */
+        margin: 0 auto; /* Centré horizontalement */
+    }
+
+    /* STYLE TEXTES */
+    .mobile-slide .slider-categories,
+    .mobile-slide .slider-categories a { /* Catégories */
+        color: #fff !important; /* Texte blanc */
+        text-transform: uppercase; /* Texte en majuscules */
+        letter-spacing: 2px; /* Espacement des lettres */
+        font-size: 10px; /* Taille de la police */
+        margin-bottom: 10px; /* Marge inférieure */
+        display: inline-block; /* Affichage en ligne */
+    }
+
+    /* TITRE */
+    .mobile-slide .slider-title a { /* Titre du slide */
+        color: #fff !important; /* Texte blanc */
+        font-family: 'Playfair Display', serif !important; /* Police des titres */
+        font-size: 28px !important; /* Taille de la police */
+        line-height: 1.2; /* Hauteur de ligne */
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Ombre pour lisibilité */
+        text-decoration: none;  /* Pas de soulignement */
+    }
+
+    /* CONTENU VISIBLE */
+    .mobile-slide .slider-content { /* Contenu du slide */
+        display: block !important; /* Affiché */
+    }
+
+    /* LE TEXTE DU SLIDER */
+    .mobile-slide .slider-content p { /* Paragraphe du contenu */
+        color: #f1f1f1 !important; /* Texte clair */
+        font-family: 'Open Sans', sans-serif !important; /* Police du texte */
+        font-size: 13px !important; /* Taille de la police */
+        line-height: 1.6 !important; /* Hauteur de ligne */
+        margin-top: 15px; /* Marge supérieure */
+        margin-bottom: 20px; /* Marge inférieure */
+        display: -webkit-box !important; /* Utilise le modèle boîte WebKit */
+        line-clamp: 3; /* Limite à 3 lignes */
+        -webkit-line-clamp: 3; /* Limite à 3 lignes */
+        -webkit-box-orient: vertical; /* Orientation verticale */
+        overflow: hidden; /* Cache le débordement */
+    }
+
+    /* LA DATE */
+    .mobile-slide .slider-date { /* Date du slide */
+        display: block !important; /* Affiché */
+        color: #cccccc !important; /* Texte gris clair */
+        font-family: 'Open Sans', sans-serif !important; /* Police du texte */
+        font-size: 11px !important; /* Taille de la police */
+        margin-top: 20px; /* Marge supérieure */
+        letter-spacing: 1px; /* Espacement des lettres */
+        text-transform: uppercase; /* Texte en majuscules */
+    }
+
+    /* BOUTON */
+    .chic-bouton-transparent { /* Classe de bouton transparent */
+        display: inline-block; /* Affichage en ligne */
+        color: #fff !important; /* Texte blanc */
+        border: 1px solid #fff; /* Bordure blanche */
+        padding: 10px 20px; /* Padding */
+        font-size: 11px; /* Taille de la police */
+        text-transform: uppercase; /* Texte en majuscules */
+        letter-spacing: 2px; /* Espacement des lettres */
+        text-decoration: none; /* Pas de soulignement */
+        transition: 0.3s; /* Transition */
+    }
+
+    /* Bouton hover */
+    .mobile-global-link { /* Lien couvrant toute la slide */
+        position: absolute; /* Position absolue */
+        top: 0; left: 0; right: 0; bottom: 0;  /* Couvre toute la slide */
+        z-index: 20; /* Au-dessus du contenu */
+    } 
+
+    /* DOTS */
+    .slider-dots { /* Conteneur des points de navigation */
+        position: absolute; /* Position absolue */
+        bottom: 20px; /* Marge inférieure */
+        left: 0; right: 0; /* Centré horizontalement */
+        display: flex; /* Utilise Flexbox */
+        justify-content: center; /* Centre les points */
+        gap: 10px; /* Espacement entre les points */
+        z-index: 30; /* Au-dessus du contenu */
+        pointer-events: none; /* Désactive les interactions par défaut */
+    }
+
+    /* Style des boutons des dots */
+    .slider-dots button { /* Chaque point */
+        width: 24px; /* Largeur */
+        height: 24px; /* Hauteur */
+        padding: 0; /* Pas de padding */
+        border: 1px solid #fff; /* Bordure blanche */
+        border-radius: 50%; /* Rond */
+        background: transparent; /* Fond transparent */
+        pointer-events: auto; /* Active les interactions */
+    }
+
+    /* Bouton actif */
+    .slider-dots button.active { /* Point actif */
+        background: #fff; /* Fond blanc */
+    }
+
+    /* AFFICHER LE CONTENU */
+    .mobile-slide .slider-content,
+  .mobile-slide .slider-date { /* Contenu et date du slide */
+        display:block !important; /* Affiché */
+    }
+} /* Fin du media query mobile */
+
+/* =========================
+   GOOGLE MAPS 
+   ========================= */
+
+/* Maps : prend toute la largeur du contenu + hauteur correcte */
+.cd-map {  /* Conteneur de la carte */
+    display: block; /* Affichage en bloc */
+    width: 100%; /* Pleine largeur */
+    max-width: 100%; /* Largeur maximale */
+    height: 450px; /* Hauteur fixe */
+    border: 0; /* Pas de bordure */
+}
+
+/* Sur mobile : un peu moins haut */
+@media (max-width: 768px) { /* Cible les écrans de 768px et moins */
+    /* Réduit la hauteur de la carte */
+    .cd-map { /* Conteneur de la carte */
+        height: 320px; /* Hauteur réduite */
+    }
+}/* Fin du media query mobile */
+
+/* =========================
+   GRILLE PRODUITS 
+   ========================= */
+
+/* Titres : max 2 lignes */
+.woocommerce ul.products li.product .woocommerce-loop-product__title { /* Titre du produit */
+    min-height: 2.8em; /* Hauteur minimale pour 2 lignes */
+}
+
+/* slide visible avant initialisation Slick */
+#featured-slider .slider-item { /* Chaque slide */
+    display: none !important; /* Caché par défaut */
+}
+
+/* Affiche la 1ère slide avant initialisation */
+#featured-slider .slider-item:first-child { /* Première slide */
+    display: block !important; /* Affiché */
+}
+
+/* Affiche toutes les slides après initialisation */
+#featured-slider.slick-initialized .slider-item { /* Slides après initialisation */
+    display: block !important; /* Affiché */
+}
+
+/* =========================
+   WOOCOMMERCE : onglets produit
+   ========================= */
+/* Hiérarchie des titres dans les onglets produit */
+.woocommerce-Tabs-panel h2 {  /* Titre de niveau 2 */
+    font-size: 1.5rem !important;  /* Taille de police */
+}
+
+/* Sous-titres dans les onglets produit */
+.woocommerce-Tabs-panel h3 {  /* Titre de niveau 3 */
+    font-size: 1.25rem !important;  /* Taille de police */
+}
+
+/* ACCESSIBILITÉ : cibles tactiles pour catégories/liens */
+.post-categories a,
+a[rel="category tag"],
+.blog-grid .post-title a,
+.blog-grid .post-meta a { /* Liens des catégories et titres */
+    min-height: 48px;  /* Hauteur minimale pour cibles tactiles */
+    padding: 10px 12px; /* Padding pour agrandir la zone cliquable */
+    display: inline-flex; /* Utilise Flexbox */
+    align-items: center; /* Centre verticalement */
+}
+
+/* ACCESSIBILITÉ : texte masqué pour lecteurs d'écran */
+.screen-reader-text{ /* Classe pour texte masqué */
+  position:absolute; /* Position absolue */
+  width:1px; /* Largeur réduite */
+  height:1px; /* Hauteur réduite */
+  padding:0; /* Pas de padding */
+  margin:-1px; /* Marge négative */
+  overflow:hidden; /* Cache le débordement */
+  clip:rect(0,0,0,0); /* Rectangle de clipping */
+  white-space:nowrap; /* Pas de retour à la ligne */
+  border:0; /* Pas de bordure */
+}
+
+
+/* =========================
+   MOBILE : 1 PRODUIT PAR LIGNE
+   ========================= */
+@media (max-width: 768px) { /* Cible les écrans de 768px et moins */
+    /* Cible les produits spécifiquement sur mobile */
+    #chic-products ul.products li.product,
+    .woocommerce ul.products[class*=columns-] li.product,
+    .woocommerce-page ul.products[class*=columns-] li.product {  /* Chaque produit */
+        width: 100% !important; /* Force le produit à prendre toute la largeur */
+        float: none !important; /* Annule l'alignement côte à côte */
+        margin-right: 0 !important; /* Pas de marge à droite */
+        margin-left: 0 !important;
+        margin-bottom: 30px !important; /* Ajoute un peu d'espace entre chaque produit */
+    }
+    
+    /* On s'assure que l'image prend aussi toute la place */
+    #chic-products ul.products li.product img { /* Image du produit */
+        width: 100% !important; /* Pleine largeur */
+        height: auto !important; /* Hauteur automatique */
+    }
+}
+

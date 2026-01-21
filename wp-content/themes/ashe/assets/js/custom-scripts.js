@@ -20,7 +20,7 @@ jQuery(document).ready(function( $ ) {
 
 	// Responsive Menu 
 	$( '#mobile-menu .menu-item-has-children' ).prepend( '<div class="sub-menu-btn"></div>' );
-	$( '#mobile-menu .sub-menu' ).before( '<span class="sub-menu-btn-icon"><i class="fa fa-angle-down"></i></span>' );
+	$( '#mobile-menu .sub-menu' ).before( '<span class="sub-menu-btn-icon"><i class="fa-solid fa-angle-down"></i></span>' );
 
 	// Responsive sub-menu btn
 	$('.sub-menu-btn').click(function(){
@@ -155,14 +155,14 @@ jQuery(document).ready(function( $ ) {
 				localStorage.setItem( 'asheDarkMode', 'off' );
 
 				// Remove
-				darkModeSwitcher.find('i').removeAttr('class').addClass('fa fa-moon-o');
+				darkModeSwitcher.find('i').removeAttr('class').addClass('fa-regular fa-moon');
 				$('style#ashe_dark_mode').remove();
 			} else {
 				body.addClass( 'ashe-dark-mode' );
 				localStorage.setItem( 'asheDarkMode', 'on' );
 
 				// Apply
-				darkModeSwitcher.find('i').removeAttr('class').addClass('fa fa-sun-o');
+				darkModeSwitcher.find('i').removeAttr('class').addClass('fa-regular fa-sun');
 				$('head').append( darkModeCSS );
 			}
 		});
@@ -170,7 +170,7 @@ jQuery(document).ready(function( $ ) {
 		// Apply on Load
 		if ( 'on' === localStorage.getItem('asheDarkMode') ) {
 			$( 'body' ).addClass( 'ashe-dark-mode' );
-			darkModeSwitcher.find('i').removeAttr('class').addClass('fa fa-sun-o');
+			darkModeSwitcher.find('i').removeAttr('class').addClass('fa-regular fa-sun');
 			$('head').append( darkModeCSS );
 		}
 

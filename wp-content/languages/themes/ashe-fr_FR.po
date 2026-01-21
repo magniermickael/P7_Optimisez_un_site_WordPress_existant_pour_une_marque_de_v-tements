@@ -2,55 +2,126 @@
 # This file is distributed under the same license as the Themes - Ashe package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-05-13 08:10:29+0000\n"
+"PO-Revision-Date: 2025-03-17 10:38:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/3.0.0\n"
+"X-Generator: GlotPress/4.0.3\n"
 "Language: fr\n"
 "Project-Id-Version: Themes - Ashe\n"
 
 #. Description of the theme
+#: style.css
 #, gp-priority: high
-msgid "Personal and Multi-Author Free WordPress Blog Theme. Perfect for personal, lifestyle, health & fitness, food, cooking, bakery, travel, beauty, fashion, wedding, photography, news, quotes blog, auto blog, small business website and any other kind of amazing blogs. Minimal, elegant & mobile friendly layout with WooCommerce shop (storefront) support will WOW and inspire your visitors. Well documented and very easy to use even for WordPress beginners. Clean and Modern Responsive design will perfectly showcase your content on any device, even on tablet, mobile & retina displays. Very fast, compatibility with many popular plugins & of course translation & RTL (right to left language) ready, coded with best SEO practices. The theme has features like Text & Image logo, Fullscreen Slider, Header image, Instagram slider widget support, footer menu support, GDPR compatibility plugins support and many more. Works perfectly with all major drag and drop page builders like Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi. You just need to write and be awesome! TEMPLATE DEMO: https://wp-royal.com/themes/ashe-free/demo/"
-msgstr "Thème WordPress gratuit de blog personnel et multi-auteur. Parfait pour les sites perso, mode de vie, santé et fitness, nourriture, cuisine, boulangerie, voyage, beauté, mode, mariage, photographie, actualités, blog de citations, blog automatique, site web de petite entreprise et tout autre genre de blogs étonnants. La mise en page intelligente, élégante et mobile friendly inspirera et bluffera vos visiteurs avec sa prise en charge de WooCommerce. Bien documenté et très facile à utiliser même pour les débutants WordPress. Propre et moderne, son design adaptatif mettra parfaitement en valeur votre contenu sur n’importe quel appareil, même sur tablette, mobile et écran rétina. Il est très rapide, compatibilité avec de nombreuses extensions populaires, bien sûr traduit et codé avec les meilleures pratiques SEO. Le thème possède des fonctionnalités comme l’utilisation du logo en texte ou en image, le diaporama de plein écran, l’image d’en-tête, la prise en charge du widget de diaporama d’Instagram, du menu de pied de page, des extensions de RGPD et bien plus. Il fonctionne parfaitement avec tous les principaux constructeurs de pages via glisser-déposer comme Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi. Vous n’avez qu’à écrire, Ashe fera le reste ! DÉMO : http://wp-royal.com/themes/ashe-free/demo/"
+msgid "Personal and Multi-Author Free WordPress Blog Theme. Perfect for personal, lifestyle, health & fitness, food, cooking, bakery, travel, beauty, fashion, wedding, photography, news, quotes blog, auto blog, small business website and any other kind of amazing blogs. Minimal, elegant & mobile friendly layout with WooCommerce shop (storefront) support will WOW and inspire your visitors. Well documented and very easy to use even for WordPress beginners. Clean and Modern Responsive design will perfectly showcase your content on any device, even on tablet, mobile & retina displays. Very fast, compatibility with many popular plugins & of course translation & RTL (right to left language) ready, coded with best SEO practices. The theme has features like Text & Image logo, Fullscreen Slider, Header image, Instagram slider widget support, footer menu support, GDPR compatibility plugins support and many more. Works perfectly with all major drag and drop page builders like Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi. You just need to write and be awesome! TEMPLATE DEMO: https://ashe-free.wp-royal-themes.com/demo/"
+msgstr "Thème WordPress gratuit de blog personnel et multi-auteur. Parfait pour les sites perso, mode de vie, santé et fitness, nourriture, cuisine, boulangerie, voyage, beauté, mode, mariage, photographie, actualités, blog de citations, blog automatique, site web de petite entreprise et tout autre genre de blogs étonnants. La mise en page intelligente, élégante et mobile friendly inspirera et bluffera vos visiteurs avec sa prise en charge de WooCommerce. Bien documenté et très facile à utiliser même pour les débutants WordPress. Propre et moderne, son design adaptatif mettra parfaitement en valeur votre contenu sur n’importe quel appareil, même sur tablette, mobile et écran rétina. Il est très rapide, compatibilité avec de nombreuses extensions populaires, bien sûr traduit et codé avec les meilleures pratiques SEO. Le thème possède des fonctionnalités comme l’utilisation du logo en texte ou en image, le diaporama de plein écran, l’image d’en-tête, la prise en charge du widget de diaporama d’Instagram, du menu de pied de page, des extensions de RGPD et bien plus. Il fonctionne parfaitement avec tous les principaux constructeurs de pages via glisser-déposer comme Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi. Vous n’avez qu’à écrire, Ashe fera le reste ! DÉMO : https://ashe-free.wp-royal-themes.com/demo/"
 
 #. Theme Name of the theme
-#: inc/about/about-ashe.php:418
+#: style.css inc/about/about-ashe.php:466
 #, gp-priority: high
 msgid "Ashe"
 msgstr "Ashe"
 
-#: inc/customizer/customizer.php:820
+#: inc/customizer/customizer.php:481
+msgid "Request Feature"
+msgstr "Demander une fonctionnalité"
+
+#: inc/customizer/customizer.php:1056
+msgid "Show WhatsApp"
+msgstr "Afficher WhatsApp"
+
+#: inc/about/about-ashe.php:111
+msgid "Shop Setup Video Tutorial"
+msgstr "Tutoriel vidéo pour configurer la boutique"
+
+#: inc/about/about-ashe.php:109
+msgid "Install Woocommerce"
+msgstr "Installer Woocommerce"
+
+#: inc/activation/class-welcome-notice.php:408
+msgid "Something went wrong, contact support."
+msgstr "Un problème est survenu, contactez le support technique."
+
+#: inc/activation/class-welcome-notice.php:342
+msgid "Get Started with Ashe Blog"
+msgstr "Premiers pas avec le blog Ashe"
+
+#: inc/activation/class-welcome-notice.php:340
+msgid "Get Started with Templates Kit"
+msgstr "Premiers pas avec le kit de modèles"
+
+#: inc/activation/class-welcome-notice.php:336
+msgid "Don't miss our unique collection of constantly increasing Royal Elementor Templates Kit."
+msgstr "Ne manquez pas notre collection unique de kits de modèles Royal Elementor en constante évolution"
+
+#: inc/activation/class-welcome-notice.php:334
+msgid "Ashe theme now comes with Elementor based sites library with various designs to pick from."
+msgstr "Le thème Ashe est désormais doté d’une bibliothèque de sites basée sur Elementor, avec différents modèles à choisir."
+
+#: inc/activation/class-welcome-notice.php:236
+#: inc/activation/class-welcome-notice.php:271
+msgid "Failed to initialize or activate importer plugin."
+msgstr "Impossible d’initialiser ou d’activer outil d’importation de l’extension."
+
+#: inc/activation/class-welcome-notice.php:204
+#: inc/activation/class-welcome-notice.php:248
+msgid "Insufficient permissions to install the plugin."
+msgstr "Droits insuffisants pour installer l’extension."
+
+#: functions.php:186
+msgid "Want to switch back to the Classic Widgets?"
+msgstr "Désirez-vous revenir aux widgets classiques ?"
+
+#: inc/customizer/customizer.php:755
+msgid "Enable Hidden Title (h1 missing SEO issue)"
+msgstr "Activer le titre caché (H1 manquant pour le SEO)"
+
+#: inc/about/about-ashe.php:107 inc/about/about-ashe.php:139
+msgid "Activate Now"
+msgstr "Activer maintenant"
+
+#: inc/about/about-ashe.php:105 inc/about/about-ashe.php:137
+msgid "Already Activated"
+msgstr "Déjà activé"
+
+#: inc/about/about-ashe.php:131
+msgid "The most useful and easy to use Elementor Addons by WP Royal. Build any kind of page just with drag and drop. Add Grids. Galleries, Testimonials, Pricings, Countdown, etc..."
+msgstr "Les modules Elementor les plus utiles et faciles à utiliser par WP Royal. Construisez tous types de page par simple glisser-déposer. Ajoutez des grilles. galeries, témoignages, prix, compte à rebours, etc…"
+
+#: inc/about/about-ashe.php:127 inc/about/about-ashe.php:128
+msgid "Royal Elementor Addons"
+msgstr "Modules Royal Elementor"
+
+#: inc/customizer/customizer.php:913
 msgid "Exclude Slides without Images"
 msgstr "Exclure les diapositives sans images"
 
-#: inc/customizer/customizer.php:713
+#: inc/customizer/customizer.php:806
 msgid "Show Simple Header"
 msgstr "Afficher l’en-tête simple"
 
-#: inc/about/about-ashe.php:392 inc/customizer/customizer.php:318
+#: inc/about/about-ashe.php:440 inc/customizer/customizer.php:386
 msgid "Contact Us"
 msgstr "Contactez-nous"
 
-#: inc/about/about-ashe.php:391 inc/customizer/customizer.php:317
+#: inc/about/about-ashe.php:439 inc/customizer/customizer.php:385
 msgid "If you have any kind of theme related questions, feel free to ask."
 msgstr "Si vous avez des questions liées à ce thème, n’hésitez pas à les poser."
 
-#: inc/about/about-ashe.php:389
+#: inc/about/about-ashe.php:437
 msgid "Email Support"
 msgstr "Support par e-mail"
 
-#: comments.php:46
+#: comments.php:44
 msgid "Post Comment"
 msgstr "Laisser un commentaire"
 
-#: comments.php:45
+#: comments.php:43
 msgid "Comment"
 msgstr "Commentaire"
 
-#: comments.php:44
+#: comments.php:42
 msgid "Leave a Reply"
 msgstr "Laisser un commentaire"
 
@@ -58,143 +129,139 @@ msgstr "Laisser un commentaire"
 msgid "To disable this option, navigate to Appearance > Customize > Skins section and uncheck \"Dark Mode Switcher\" option. Only logged-in admin level users can see this notice!"
 msgstr "Pour désactiver cette option, allez dans la section Apparence > Personnaliser > Habillages et décochez l’option « Commutateur en mode sombre ». Uniquement les administrateurs et administratrices peuvent voir cette notification !"
 
-#: inc/about/about-ashe.php:401
+#: inc/about/about-ashe.php:449
 msgid "Download Now"
 msgstr "Télécharger maintenant"
 
-#: inc/about/about-ashe.php:400
+#: inc/about/about-ashe.php:448
 msgid "The best way to customize Ashe Theme code."
 msgstr "La meilleure façon de personnaliser le code du thème Ashe."
 
-#: inc/about/about-ashe.php:398
+#: inc/about/about-ashe.php:446
 msgid "Child Theme"
 msgstr "Thème enfant"
 
-#: inc/customizer/customizer.php:1270
+#: inc/customizer/customizer.php:1372
 msgid "Menu Button Text"
 msgstr "Texte du bouton du menu"
 
-#: inc/customizer/customizer.php:1267
+#: inc/customizer/customizer.php:1369
 msgid "Select Mobile Menu Icon"
 msgstr "Sélectionner l’icône de menu mobile"
 
-#: inc/customizer/customizer.php:459
+#: inc/customizer/customizer.php:549
 msgid "Switcher icon will be added to the right of the Navigation Menu. When the Dark Mode is enabled color controls will NOT work except Accent Color control. Dark Mode design reduces the light emitted by device screens while maintaining the minimum color contrast ratios required for readability."
 msgstr "L’icône de commutateur sera ajoutée à droite du menu de navigation. Quand le mode sombre est activé, les contrôles de couleur ne fonctionneront PAS, sauf le contrôle de la couleur accentuée. Le design du mode sombre réduit la lumière émise par les écrans des appareils tout en maintenant les rapports de contraste de couleur minimums nécessaire pour la lisibilité."
 
-#: inc/customizer/customizer.php:449
+#: inc/customizer/customizer.php:539
 msgid "Show Dark Mode Switcher"
 msgstr "Afficher le commutateur en mode sombre"
 
-#: inc/customizer/customizer.php:415
+#: inc/customizer/customizer.php:505
 msgid "Box"
 msgstr "Boîte"
 
-#: inc/customizer/customizer.php:902
+#: inc/customizer/customizer.php:995
 msgid "Feat. Links Options "
 msgstr "Options de liens mis en avant"
 
-#: inc/customizer/customizer.php:1010
+#: inc/customizer/customizer.php:1104
 msgid "Show Featured Image"
 msgstr "Afficher l’image mise en avant"
 
-#: inc/customizer/customizer.php:938
+#: inc/customizer/customizer.php:1032
 msgid "Show Drop Caps (First Big Letter)"
 msgstr "Afficher le lettrine (première lettre grosse)"
 
-#: inc/about/about-ashe.php:95
+#: inc/about/about-ashe.php:86
 msgid "Demo Import Video Tutorial"
 msgstr "Didacticiel vidéo d’importation de démonstration"
 
-#: inc/about/about-ashe.php:84
+#: inc/about/about-ashe.php:75
 msgid "If you are a WordPress beginner it's highly recommended to install the theme Demo Content. This file includes: Menus, Posts, Pages, Widgets, etc."
 msgstr "Si vous débutez avec WordPress, nous vous recommandons fortement d’installer le thème avec le contenu de démonstration. Ce fichier inclut : des menus, des articles, des pages, des widgets, etc."
 
-#: inc/about/about-ashe.php:78
+#: inc/about/about-ashe.php:69
 msgid "Setup Instagram"
 msgstr "Configurer Instagram"
 
-#: inc/customizer/customizer.php:971
+#: inc/customizer/customizer.php:1065
 msgid "Show Tumblr"
 msgstr "Afficher Tumblr"
 
-#: inc/customizer/customizer.php:968
+#: inc/customizer/customizer.php:1062
 msgid "Show Reddit"
 msgstr "Afficher Reddit"
 
-#: inc/customizer/customizer.php:965
+#: inc/customizer/customizer.php:1059
 msgid "Show Linkedin"
 msgstr "Afficher LinkedIn"
 
-#: inc/customizer/customizer.php:962
-msgid "Show Google Plus"
-msgstr "Afficher Google Plus"
-
-#: inc/customizer/customizer.php:959
+#: inc/customizer/customizer.php:1053
 msgid "Show Pinterest"
 msgstr "Afficher Pinterest"
 
-#: inc/customizer/customizer.php:956
+#: inc/customizer/customizer.php:1050
 msgid "Show Twitter"
 msgstr "Afficher Twitter"
 
-#: inc/customizer/customizer.php:953
+#: inc/customizer/customizer.php:1047
 msgid "Show Facebook"
 msgstr "Afficher Facebook"
 
-#: inc/customizer/customizer.php:865
+#: inc/customizer/customizer.php:958
 msgid "Display Featured Links on"
 msgstr "Afficher les liens mis en avant sur"
 
-#: inc/customizer/customizer.php:788
+#: inc/customizer/customizer.php:881
 msgid "Slider Item"
 msgstr "Élément de diaporama"
 
-#: inc/customizer/customizer.php:747
+#: inc/customizer/customizer.php:840
 msgid "Posts"
 msgstr "Articles"
 
-#: inc/customizer/customizer.php:746
+#: inc/customizer/customizer.php:839
 msgid "Custom"
 msgstr "Personnaliser"
 
-#: inc/customizer/customizer.php:743
+#: inc/customizer/customizer.php:836
 msgid "Display Slider on"
 msgstr "Afficher le diaporama sur"
 
-#: inc/customizer/customizer.php:739 inc/customizer/customizer.php:861
+#: inc/customizer/customizer.php:832 inc/customizer/customizer.php:954
 msgid "Front and Posts Pages"
 msgstr "Les pages d’accueil et d’articles"
 
-#: inc/customizer/customizer.php:738 inc/customizer/customizer.php:860
+#: inc/customizer/customizer.php:831 inc/customizer/customizer.php:953
 msgid "Posts Page"
 msgstr "Page des articles"
 
-#: inc/customizer/customizer.php:737 inc/customizer/customizer.php:859
+#: inc/customizer/customizer.php:830 inc/customizer/customizer.php:952
 msgid "Front Page"
 msgstr "Page d’accueil"
 
-#: inc/customizer/customizer.php:719
+#: inc/customizer/customizer.php:812
 msgid "Logo Width"
 msgstr "Largeur du logo"
 
-#: inc/customizer/customizer.php:716
+#: inc/customizer/customizer.php:809
 msgid "Logo Upload"
 msgstr "Téléverser un logo"
 
-#: inc/customizer/customizer.php:429
+#: inc/customizer/customizer.php:519
 msgid "After activating non-default skin, you will NOT be able to take control over skin colors. These options are only available in the Ashe PRO."
 msgstr "Après l’activation d’un jeu de couleurs non par défaut, vous ne POURREZ PAS prendre le contrôle des jeux de couleurs. Ces options ne sont disponibles que dans Ashe PRO."
 
-#: inc/customizer/customizer.php:419
+#: inc/customizer/customizer.php:509
 msgid "Select Theme Skin"
 msgstr "Sélectionner le jeu de couleurs du thème"
 
-#: inc/customizer/customizer.php:407 inc/customizer/customizer.php:473
+#: inc/customizer/customizer.php:497 inc/customizer/customizer.php:563
 msgid "Skins"
-msgstr "Jeux de couleurs"
+msgstr "Habillages"
 
-#: inc/customizer/customizer.php:360
+#: inc/customizer/customizer.php:428
 msgid "Please Note: "
 msgstr "Veuillez noter :"
 
@@ -465,7 +532,7 @@ msgstr "Version"
 msgid "Type"
 msgstr "Type"
 
-#: inc/customizer/customizer.php:751
+#: inc/customizer/customizer.php:844
 #: inc/tgm/class-tgm-plugin-activation.php:2548
 msgid "Source"
 msgstr "Adresse web source"
@@ -692,59 +759,59 @@ msgstr "Installer les extensions"
 msgid "Install Required Plugins"
 msgstr "Installer les extensions nécessaires"
 
-#: inc/about/about-ashe.php:307
+#: inc/about/about-ashe.php:352
 msgid "Customize Blog Page"
 msgstr "Personnaliser la page du blog"
 
-#: inc/about/about-ashe.php:302
+#: inc/about/about-ashe.php:347
 msgid "Customize General Layouts"
 msgstr "Personnaliser la mise en page générale"
 
-#: inc/about/about-ashe.php:287
+#: inc/about/about-ashe.php:332
 msgid "Setup Random Header Images"
 msgstr "Configurer les images aléatoires d’en-tête"
 
-#: inc/customizer/customizer.php:1258
+#: inc/customizer/customizer.php:1360
 msgid "Show Related Posts"
 msgstr "Afficher les articles similaires"
 
-#: inc/customizer/customizer.php:1255
+#: inc/customizer/customizer.php:1357
 msgid "Show Featured Links"
 msgstr "Afficher les liens mis en avant"
 
-#: inc/customizer/customizer.php:1252
+#: inc/customizer/customizer.php:1354
 msgid "Show Featured Slider"
 msgstr "Afficher le diaporama mis en avant"
 
-#: inc/customizer/customizer.php:1249
+#: inc/customizer/customizer.php:1351
 msgid "Merge Top and Main Menus"
 msgstr "Fusionner les menus haut et principal"
 
-#: inc/customizer/customizer.php:1242
+#: inc/customizer/customizer.php:1344
 msgid "These options will only apply to Mobile devices."
 msgstr "Ces options ne s’appliqueront que sur les mobiles."
 
-#: inc/customizer/customizer.php:1241
+#: inc/customizer/customizer.php:1343
 msgid "Responsive"
 msgstr "Responsive"
 
-#: inc/customizer/customizer.php:1202
+#: inc/customizer/customizer.php:1303
 msgid "Show Scroll-Top Button"
 msgstr "Afficher le bouton de retour en haut"
 
-#: inc/about/about-ashe.php:496
+#: inc/about/about-ashe.php:544
 msgid "View Full Feature List"
 msgstr "Voir la liste complète des fonctionnalités"
 
-#: inc/about/about-ashe.php:486
+#: inc/about/about-ashe.php:534
 msgid "Premium Support 24/7"
 msgstr "Support Premium 24/7"
 
-#: inc/about/about-ashe.php:458
+#: inc/about/about-ashe.php:506
 msgid "Classic, List, Grid Layouts"
 msgstr "Mises en pages classique, en liste, en grille"
 
-#: inc/about/about-ashe.php:451
+#: inc/about/about-ashe.php:499
 msgid "Unlimited Colors Options"
 msgstr "Options de couleurs illimitées"
 
@@ -752,46 +819,46 @@ msgstr "Options de couleurs illimitées"
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "Il semblerait que nous ne soyons pas en mesure de trouver votre contenu. Essayez en lançant une recherche."
 
-#: inc/customizer/customizer.php:499
+#: inc/customizer/customizer.php:589
 msgid "Header Background"
 msgstr "Arrière-plan de l’en-tête"
 
-#: inc/about/about-ashe.php:549
+#: inc/about/about-ashe.php:597
 msgid "..."
 msgstr "…"
 
-#: inc/about/about-ashe.php:382 inc/customizer/customizer.php:347
+#: inc/about/about-ashe.php:430 inc/customizer/customizer.php:415
 msgid "Want to get the gist on the latest theme changes? Just consult our changelog below to get a taste of the recent fixes and features implemented."
 msgstr "Vous voulez obtenir l’essentiel sur les derniers changements de thème ? Il vous suffit de consulter notre journal ci-dessous pour obtenir un avant-goût des correctifs récents et des fonctionnalités mises en place."
 
 #. translators: %s link
-#: inc/about/about-ashe.php:137 inc/customizer/customizer.php:340
+#: inc/about/about-ashe.php:177 inc/customizer/customizer.php:408
 msgid "Ashe Pro's powerful setup allows you to easily create unique looking sites. Here are a few included examples that can be installed with one click in the Pro Version. More details in the <a href=\"%s\" target=\"_blank\" >Theme Documentation</a>"
 msgstr "La puissante configuration d’Ashe Pro vous permet de créer facilement des sites à l’aspect unique. Voici quelques exemples qui peuvent être installés en un seul clic dans la version Pro. Plus de détails dans la <a href=\"%s\" target=\"_blank\" >documentation du thème</a>."
 
-#: inc/about/about-ashe.php:105
+#: inc/about/about-ashe.php:121
 msgid "Start Customizing"
 msgstr "Commencer la personnalisation"
 
 #. translators: %s theme name
-#: inc/about/about-ashe.php:102
+#: inc/about/about-ashe.php:118
 msgid "%s supports the Theme Customizer for all theme settings. Click \"Customize\" to personalize your site."
 msgstr "%s prend en charge la personnalisation de thème pour tous les réglages du thème. Cliquez sur « Personnaliser » pour vous lancer."
 
-#: inc/about/about-ashe.php:53
+#: inc/about/about-ashe.php:46
 msgid "Useful Plugins"
 msgstr "Extensions utiles"
 
-#: functions.php:301
+#: functions.php:322
 msgid "Left Sidebar"
 msgstr "Colonne latérale gauche"
 
-#: functions.php:291
+#: functions.php:312
 msgid "Right Sidebar"
 msgstr "Colonne latérale droite"
 
 #. translators: %1$s: theme name, %2$s link
-#: functions.php:106
+#: functions.php:123
 msgid "Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr "Merci d’avoir choisi %1$s ! Pour tirer pleinement avantage de notre meilleur thème, n’oubliez pas de vous rendre sur notre <a href=\"%2$s\">page de bienvenue</a>."
 
@@ -805,253 +872,258 @@ msgstr "Bienvenue dans %s"
 msgid "%1$s Theme by <a href=\"%2$s\">%3$s.</a>"
 msgstr " Thème %1$s par <a href=\"%2$s\">%3$s.</a>"
 
-#: inc/customizer/customizer.php:1165
+#: inc/customizer/customizer.php:1265
 msgid "Uppercase"
 msgstr "Majuscules"
 
-#: inc/customizer/customizer.php:1162
+#: inc/customizer/customizer.php:1262
 msgid "Italic"
 msgstr "Italique"
 
-#: inc/customizer/customizer.php:1199
+#: inc/customizer/customizer.php:1300
 msgid "Your Copyright Text"
 msgstr "Votre texte de droit d’auteur"
 
-#: inc/customizer/customizer.php:322
+#: inc/customizer/customizer.php:390
 msgid "Demo Preview Page."
 msgstr "page d’aperçu de démonstration."
 
-#: inc/customizer/customizer.php:322
+#: inc/customizer/customizer.php:390
 msgid "All you need for startup: Demo Import, Video Tutorials and more. To see what Ashe theme can offer, please visit a "
 msgstr ""
 "Tout ce dont vous avez besoin pour bien démarrer :\n"
 "Importation de démo, didacticiels vidéo et plus encore.\n"
 "Pour voir ce que le thème Ashe peut offrir, veuillez visiter notre"
 
-#: inc/customizer/customizer.php:321
+#: inc/customizer/customizer.php:389
 msgid "Demo Import / Getting Started"
 msgstr "Importation de démo/Guide de démarrage"
 
-#: inc/about/about-ashe.php:316
+#: inc/about/about-ashe.php:361
 msgid "Translate The Theme"
 msgstr "Traduire le thème"
 
-#: inc/about/about-ashe.php:312
+#: inc/about/about-ashe.php:357
 msgid "Create Blog Post"
 msgstr "Créer un article de blog"
 
-#: inc/about/about-ashe.php:253
+#: inc/about/about-ashe.php:298
 msgid "Setup Instagram Widget"
 msgstr "Configurer le widget Instagram"
 
-#: inc/about/about-ashe.php:297
+#: inc/about/about-ashe.php:342
 msgid "Setup Featured Links"
 msgstr "Configurer les liens en avant"
 
-#: inc/about/about-ashe.php:292
+#: inc/about/about-ashe.php:337
 msgid "Setup Featured Slider"
 msgstr "Configurer le diaporama en avant"
 
-#: inc/about/about-ashe.php:282
+#: inc/about/about-ashe.php:327
 msgid "Setup Header Image"
 msgstr "Installer l’image d’en-tête"
 
-#: inc/about/about-ashe.php:277
+#: inc/about/about-ashe.php:322
 msgid "Setup Colors"
 msgstr "Configurer les couleurs"
 
-#: inc/about/about-ashe.php:272
+#: inc/about/about-ashe.php:317
 msgid "Setup Copyright"
 msgstr "Configurer les droits d’auteur"
 
-#: inc/about/about-ashe.php:267
+#: inc/about/about-ashe.php:312
 msgid "Setup Social Media"
 msgstr "Configurer les réseaux sociaux"
 
-#: inc/about/about-ashe.php:262
+#: inc/about/about-ashe.php:307
 msgid "Setup Logo Image"
 msgstr "Configurer l’image du logo"
 
-#: inc/about/about-ashe.php:259 inc/about/about-ashe.php:264
-#: inc/about/about-ashe.php:269 inc/about/about-ashe.php:274
-#: inc/about/about-ashe.php:279 inc/about/about-ashe.php:284
-#: inc/about/about-ashe.php:289 inc/about/about-ashe.php:294
-#: inc/about/about-ashe.php:299 inc/about/about-ashe.php:304
-#: inc/about/about-ashe.php:309
+#: inc/about/about-ashe.php:304 inc/about/about-ashe.php:309
+#: inc/about/about-ashe.php:314 inc/about/about-ashe.php:319
+#: inc/about/about-ashe.php:324 inc/about/about-ashe.php:329
+#: inc/about/about-ashe.php:334 inc/about/about-ashe.php:339
+#: inc/about/about-ashe.php:344 inc/about/about-ashe.php:349
+#: inc/about/about-ashe.php:354
 msgid "Customize"
 msgstr "Personnaliser"
 
-#: functions.php:355 functions.php:374 inc/about/about-ashe.php:257
+#: functions.php:376 functions.php:395 inc/about/about-ashe.php:302
 msgid "Setup Menu"
 msgstr "Configurer le menu"
 
-#: inc/about/about-ashe.php:250 inc/customizer/customizer.php:323
+#: inc/about/about-ashe.php:295 inc/customizer/customizer.php:391
 msgid "Get Started"
-msgstr "Lancez-vous !"
+msgstr "Premiers pas"
 
-#: inc/about/about-ashe.php:249 inc/about/about-ashe.php:254
-#: inc/about/about-ashe.php:258 inc/about/about-ashe.php:263
-#: inc/about/about-ashe.php:268 inc/about/about-ashe.php:273
-#: inc/about/about-ashe.php:278 inc/about/about-ashe.php:283
-#: inc/about/about-ashe.php:288 inc/about/about-ashe.php:293
-#: inc/about/about-ashe.php:298 inc/about/about-ashe.php:303
-#: inc/about/about-ashe.php:308 inc/about/about-ashe.php:313
-#: inc/about/about-ashe.php:317
+#: inc/about/about-ashe.php:294 inc/about/about-ashe.php:299
+#: inc/about/about-ashe.php:303 inc/about/about-ashe.php:308
+#: inc/about/about-ashe.php:313 inc/about/about-ashe.php:318
+#: inc/about/about-ashe.php:323 inc/about/about-ashe.php:328
+#: inc/about/about-ashe.php:333 inc/about/about-ashe.php:338
+#: inc/about/about-ashe.php:343 inc/about/about-ashe.php:348
+#: inc/about/about-ashe.php:353 inc/about/about-ashe.php:358
+#: inc/about/about-ashe.php:362
 msgid "Watch Video"
 msgstr "Regarder la vidéo"
 
-#: inc/about/about-ashe.php:92
+#: inc/about/about-ashe.php:83
 msgid "Install Demo Import Plugin"
 msgstr "Installer l’extension d’importation de démo"
 
-#: inc/about/about-ashe.php:90
+#: inc/about/about-ashe.php:81
 msgid "Activate Demo Import Plugin"
 msgstr "Activer l’extension d’importation de démo"
 
-#: inc/about/about-ashe.php:88
+#: inc/about/about-ashe.php:79
 msgid "Go to Import page"
 msgstr "Se rendre sur la page d’importation"
 
-#: inc/about/about-ashe.php:50
+#: inc/about/about-ashe.php:43
 msgid "Video Tutorials"
-msgstr "Didacticiels vidéo"
+msgstr "Tutoriels vidéo"
 
-#: inc/about/about-ashe.php:26
+#. translators: %s theme name
+#: inc/about/about-ashe.php:21
 msgid "Theme Demo Preview"
 msgstr "Voir la démo du thème"
 
-#: functions.php:52
+#: inc/activation/class-welcome-notice.php:332
+msgid "Welcome to Ashe"
+msgstr "Bienvenue à Ashe"
+
+#: functions.php:53
 msgid "Footer Menu"
 msgstr "Menu du pied de page"
 
-#: inc/customizer/customizer.php:1043
+#: inc/customizer/customizer.php:1137
 msgid "Open Social Links in New Window"
 msgstr "Ouvrir les liens sociaux dans une nouvelle fenêtre"
 
-#: inc/customizer/customizer.php:646
+#: inc/customizer/customizer.php:737
 msgid "Header Options"
-msgstr "Options de l’en-tête"
+msgstr "Options de l’entête"
 
-#: inc/customizer/customizer.php:555
+#: inc/customizer/customizer.php:646
 msgid "List Style"
 msgstr "Style de liste"
 
-#: inc/customizer/customizer.php:554
+#: inc/customizer/customizer.php:645
 msgid "1 Column"
 msgstr "1 colonne"
 
-#: inc/about/about-ashe.php:441 inc/customizer/customizer.php:337
-#: inc/customizer/customizer.php:343
+#: inc/about/about-ashe.php:489 inc/customizer/customizer.php:405
+#: inc/customizer/customizer.php:411
 msgid "Predefined Styles"
 msgstr "Styles prédéfinis"
 
-#: inc/about/about-ashe.php:159
+#: inc/about/about-ashe.php:202
 msgid "Lifestyle"
 msgstr "Mode de vie"
 
-#: inc/about/about-ashe.php:166 inc/customizer/customizer.php:414
+#: inc/about/about-ashe.php:209 inc/customizer/customizer.php:504
 msgid "Dark"
 msgstr "Foncé"
 
-#: inc/about/about-ashe.php:152
+#: inc/about/about-ashe.php:194
 msgid "Food"
 msgstr "Nourriture"
 
-#: inc/about/about-ashe.php:145
+#: inc/about/about-ashe.php:187
 msgid "Main"
 msgstr "Principal"
 
-#: inc/about/about-ashe.php:142 inc/tgm/class-tgm-plugin-activation.php:2321
+#: inc/about/about-ashe.php:184 inc/tgm/class-tgm-plugin-activation.php:2321
 msgid "Active"
 msgstr "Activé"
 
-#: inc/customizer/customizer.php:1176
+#: inc/customizer/customizer.php:1276
 msgid "Typography Options"
-msgstr "Options typographiques"
+msgstr "Options de typographie"
 
-#: inc/customizer/customizer.php:1156 inc/customizer/customizer.php:1159
+#: inc/customizer/customizer.php:1256 inc/customizer/customizer.php:1259
 msgid "Font Family"
 msgstr "Famille de polices"
 
-#: inc/customizer/customizer.php:1152
+#: inc/customizer/customizer.php:1252
 msgid "Kalam"
 msgstr "Kalam"
 
-#: inc/customizer/customizer.php:1151
+#: inc/customizer/customizer.php:1251
 msgid "Rokkitt"
 msgstr "Rokkitt"
 
-#: inc/customizer/customizer.php:1150
+#: inc/customizer/customizer.php:1250
 msgid "Open Sans"
 msgstr "Open Sans"
 
-#: inc/customizer/customizer.php:1144
+#: inc/customizer/customizer.php:1244
 msgid "Typography"
 msgstr "Typographie"
 
-#: inc/about/about-ashe.php:465
+#: inc/about/about-ashe.php:513
 msgid "Advanced Slider Options"
 msgstr "Options de diaporama avancées"
 
-#: inc/customizer/customizer.php:1004
+#: inc/customizer/customizer.php:1098
 msgid "Single Post"
 msgstr "Article seul"
 
-#: inc/about/about-ashe.php:236
+#: inc/about/about-ashe.php:279
 msgid "Style 10"
 msgstr "Style 10"
 
-#: inc/about/about-ashe.php:229
+#: inc/about/about-ashe.php:272
 msgid "Style 9"
 msgstr "Style 9"
 
-#: inc/about/about-ashe.php:222
+#: inc/about/about-ashe.php:265
 msgid "Style 8"
 msgstr "Style 8"
 
-#: inc/about/about-ashe.php:215
+#: inc/about/about-ashe.php:258
 msgid "Style 7"
 msgstr "Style 7"
 
-#: inc/about/about-ashe.php:208
+#: inc/about/about-ashe.php:251
 msgid "Style 6"
 msgstr "Style 6"
 
-#: inc/about/about-ashe.php:201
+#: inc/about/about-ashe.php:244
 msgid "Style 5"
 msgstr "Style 5"
 
-#: inc/about/about-ashe.php:194
+#: inc/about/about-ashe.php:237
 msgid "Style 4"
 msgstr "Style 4"
 
-#: inc/about/about-ashe.php:187
+#: inc/about/about-ashe.php:230
 msgid "Style 3"
 msgstr "Style 3"
 
-#: inc/about/about-ashe.php:180
+#: inc/about/about-ashe.php:223
 msgid "Style 2"
 msgstr "Style 2"
 
-#: inc/about/about-ashe.php:146 inc/about/about-ashe.php:153
-#: inc/about/about-ashe.php:160 inc/about/about-ashe.php:167
-#: inc/about/about-ashe.php:174 inc/about/about-ashe.php:181
 #: inc/about/about-ashe.php:188 inc/about/about-ashe.php:195
-#: inc/about/about-ashe.php:202 inc/about/about-ashe.php:209
-#: inc/about/about-ashe.php:216 inc/about/about-ashe.php:223
-#: inc/about/about-ashe.php:230 inc/about/about-ashe.php:237
+#: inc/about/about-ashe.php:203 inc/about/about-ashe.php:210
+#: inc/about/about-ashe.php:217 inc/about/about-ashe.php:224
+#: inc/about/about-ashe.php:231 inc/about/about-ashe.php:238
+#: inc/about/about-ashe.php:245 inc/about/about-ashe.php:252
+#: inc/about/about-ashe.php:259 inc/about/about-ashe.php:266
+#: inc/about/about-ashe.php:273 inc/about/about-ashe.php:280
 msgid "Live Preview"
 msgstr "Prévisualiser"
 
-#: inc/about/about-ashe.php:173
+#: inc/about/about-ashe.php:216
 msgid "Style 1"
 msgstr "Style 1"
 
-#: inc/about/about-ashe.php:134
+#: inc/about/about-ashe.php:174
 msgid "Ashe Pro - Predefined Styles"
 msgstr "Ashe Pro - Styles prédéfinis"
 
-#: inc/customizer/customizer.php:675
+#: inc/customizer/customizer.php:767
 msgid "Logo Options"
 msgstr "Options du logo"
 
@@ -1063,7 +1135,7 @@ msgstr "Aucun widget trouvé dans la colonne latérale Alt !"
 msgid "You May Also Like"
 msgstr "Vous pourriez aussi aimer"
 
-#: inc/about/about-ashe.php:472
+#: inc/about/about-ashe.php:520
 msgid "Advanced WooCommerce Support"
 msgstr "Support avancé de WooCommerce"
 
@@ -1136,269 +1208,269 @@ msgstr "Un commentaire"
 msgid "Pages:"
 msgstr "Pages :"
 
-#: inc/customizer/customizer.php:1232
+#: inc/customizer/customizer.php:1334
 msgid "Preloading Animation"
 msgstr "Animation de préchargement"
 
-#: inc/customizer/customizer.php:1226
+#: inc/customizer/customizer.php:1328
 msgid "Preloader"
 msgstr "Préchargeur"
 
-#: inc/customizer/customizer.php:1212
+#: inc/customizer/customizer.php:1313
 msgid "Footer Options"
 msgstr "Options de pied de page"
 
-#: inc/customizer/customizer.php:1191
+#: inc/customizer/customizer.php:1292
 msgid "Page Footer"
 msgstr "Pied de page"
 
-#: inc/customizer/customizer.php:1115 inc/customizer/customizer.php:1121
-#: inc/customizer/customizer.php:1127 inc/customizer/customizer.php:1133
+#: inc/customizer/customizer.php:1215 inc/customizer/customizer.php:1221
+#: inc/customizer/customizer.php:1227 inc/customizer/customizer.php:1233
 msgid "Select Icon"
 msgstr "Sélectionnez l’icône"
 
-#: inc/customizer/customizer.php:1037
+#: inc/customizer/customizer.php:1131
 msgid "Social Media"
 msgstr "Réseaux sociaux"
 
-#: inc/customizer/customizer.php:979 inc/customizer/customizer.php:1028
+#: inc/customizer/customizer.php:1073 inc/customizer/customizer.php:1122
 msgid "Related Posts - Display"
 msgstr "Articles similaires - Afficher"
 
-#: inc/customizer/customizer.php:1025
+#: inc/customizer/customizer.php:1119
 msgid "Show Author Description"
 msgstr "Afficher la description de l’auteur"
 
-#: inc/customizer/customizer.php:989
+#: inc/customizer/customizer.php:1083
 msgid "Blog Options "
 msgstr "Options de blog"
 
-#: inc/customizer/customizer.php:975
+#: inc/customizer/customizer.php:1069
 msgid "Related"
-msgstr "Similaires"
+msgstr "Similaire"
 
-#: inc/customizer/customizer.php:950 inc/customizer/customizer.php:1022
+#: inc/customizer/customizer.php:1044 inc/customizer/customizer.php:1116
 msgid "Show Author"
 msgstr "Afficher l’auteur"
 
-#: inc/customizer/customizer.php:947 inc/customizer/customizer.php:1019
+#: inc/customizer/customizer.php:1041 inc/customizer/customizer.php:1113
 msgid "Show Comments"
 msgstr "Afficher les commentaires"
 
-#: inc/customizer/customizer.php:944 inc/customizer/customizer.php:1016
+#: inc/customizer/customizer.php:1038 inc/customizer/customizer.php:1110
 msgid "Show Date"
 msgstr "Afficher la date"
 
-#: inc/customizer/customizer.php:941 inc/customizer/customizer.php:1013
+#: inc/customizer/customizer.php:1035 inc/customizer/customizer.php:1107
 msgid "Show Categories"
 msgstr "Afficher les catégories"
 
-#: inc/customizer/customizer.php:935
+#: inc/customizer/customizer.php:1029
 msgid "Post Pagination"
 msgstr "Pagination d’article"
 
-#: inc/customizer/customizer.php:931
+#: inc/customizer/customizer.php:1025
 msgid "Numeric"
 msgstr "Numérique"
 
-#: inc/customizer/customizer.php:413 inc/customizer/customizer.php:930
+#: inc/customizer/customizer.php:503 inc/customizer/customizer.php:1024
 msgid "Default"
 msgstr "Par défaut"
 
-#: inc/customizer/customizer.php:927
+#: inc/customizer/customizer.php:1021
 msgid "Post Description"
 msgstr "Description de l’article"
 
-#: inc/customizer/customizer.php:923
+#: inc/customizer/customizer.php:1017
 msgid "Post Content"
 msgstr "Contenu de l’article"
 
-#: inc/customizer/customizer.php:922
+#: inc/customizer/customizer.php:1016
 msgid "Post Excerpt"
 msgstr "Extrait d’article"
 
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:524
-#: inc/customizer/customizer.php:921 inc/customizer/customizer.php:974
+#: inc/customizer/customizer.php:1015 inc/customizer/customizer.php:1068
 msgid "None"
 msgstr "Aucun"
 
-#: inc/customizer/customizer.php:559 inc/customizer/customizer.php:915
+#: inc/customizer/customizer.php:650 inc/customizer/customizer.php:1009
 msgid "Blog Page"
 msgstr "Page du blog"
 
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:523
-#: inc/customizer/customizer.php:874 inc/customizer/customizer.php:883
-#: inc/customizer/customizer.php:892
+#: inc/customizer/customizer.php:967 inc/customizer/customizer.php:976
+#: inc/customizer/customizer.php:985
 msgid "Image"
 msgstr "Image"
 
-#: inc/customizer/customizer.php:871 inc/customizer/customizer.php:880
-#: inc/customizer/customizer.php:889 inc/customizer/customizer.php:1118
-#: inc/customizer/customizer.php:1124 inc/customizer/customizer.php:1130
-#: inc/customizer/customizer.php:1136
+#: inc/customizer/customizer.php:964 inc/customizer/customizer.php:973
+#: inc/customizer/customizer.php:982 inc/customizer/customizer.php:1218
+#: inc/customizer/customizer.php:1224 inc/customizer/customizer.php:1230
+#: inc/customizer/customizer.php:1236
 msgid "URL"
 msgstr "URL"
 
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:265
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:381
-#: inc/customizer/customizer.php:868 inc/customizer/customizer.php:877
-#: inc/customizer/customizer.php:886
+#: inc/customizer/customizer.php:961 inc/customizer/customizer.php:970
+#: inc/customizer/customizer.php:979
 msgid "Title"
 msgstr "Titre"
 
-#: inc/customizer/customizer.php:850 inc/customizer/customizer.php:856
+#: inc/customizer/customizer.php:943 inc/customizer/customizer.php:949
 msgid "Featured Links"
 msgstr "Liens mis en avant"
 
-#: inc/customizer/customizer.php:836
+#: inc/customizer/customizer.php:929
 msgid "Slider Options "
 msgstr "Options du diaporama"
 
-#: inc/customizer/customizer.php:826
+#: inc/customizer/customizer.php:919
 msgid "Show Pagination Dots"
 msgstr "Afficher les points de pagination"
 
-#: inc/customizer/customizer.php:823
+#: inc/customizer/customizer.php:916
 msgid "Show Navigation Arrows"
 msgstr "Afficher les flèches de navigation"
 
-#: inc/customizer/customizer.php:817
+#: inc/customizer/customizer.php:910
 msgid "Number of Slides"
 msgstr "Nombre de diapositives"
 
-#: inc/customizer/customizer.php:814
+#: inc/customizer/customizer.php:907
 msgid "Select Category"
 msgstr "Sélectionner une catégorie"
 
-#: inc/customizer/customizer.php:805
+#: inc/customizer/customizer.php:898
 msgid "Display Posts"
 msgstr "Afficher les articles"
 
-#: inc/customizer/customizer.php:728 inc/customizer/customizer.php:734
+#: inc/customizer/customizer.php:821 inc/customizer/customizer.php:827
 msgid "Featured Slider"
 msgstr "Diaporama mis en avant"
 
-#: inc/customizer/customizer.php:710
+#: inc/customizer/customizer.php:803
 msgid "Show Sidebar Icon"
 msgstr "Afficher l’icône de colonne latérale"
 
-#: inc/customizer/customizer.php:707
+#: inc/customizer/customizer.php:800
 msgid "Show Search Icon"
 msgstr "Afficher l’icône de recherche"
 
-#: inc/customizer/customizer.php:704
+#: inc/customizer/customizer.php:797
 msgid "Align"
 msgstr "Alignement"
 
-#: inc/customizer/customizer.php:700
+#: inc/customizer/customizer.php:793
 msgid "Right"
 msgstr "À droite"
 
-#: inc/customizer/customizer.php:699
+#: inc/customizer/customizer.php:792
 msgid "Center"
 msgstr "Centré"
 
-#: inc/customizer/customizer.php:698
+#: inc/customizer/customizer.php:791
 msgid "Left"
 msgstr "À gauche"
 
-#: inc/customizer/customizer.php:689 inc/customizer/customizer.php:695
+#: inc/customizer/customizer.php:782 inc/customizer/customizer.php:788
 msgid "Main Navigation"
 msgstr "Navigation principale"
 
-#: inc/customizer/customizer.php:660
+#: inc/customizer/customizer.php:752
 msgid "Width"
 msgstr "Largeur"
 
-#: inc/customizer/customizer.php:636
+#: inc/customizer/customizer.php:727
 msgid "Background Image Size"
 msgstr "Taille de l’image d’arrière-plan"
 
-#: inc/customizer/customizer.php:632
+#: inc/customizer/customizer.php:723
 msgid "Pattern"
 msgstr "Composition"
 
-#: inc/customizer/customizer.php:631
+#: inc/customizer/customizer.php:722
 msgid "Cover"
 msgstr "Couvre"
 
-#: inc/customizer/customizer.php:628
+#: inc/customizer/customizer.php:719
 msgid "Page Header"
 msgstr "En-tête de la page"
 
-#: inc/customizer/customizer.php:612 inc/customizer/customizer.php:618
+#: inc/customizer/customizer.php:703 inc/customizer/customizer.php:709
 msgid "Top Bar"
 msgstr "Barre haute"
 
-#: inc/customizer/customizer.php:598
+#: inc/customizer/customizer.php:689
 msgid "Layout Options"
 msgstr "Options de mise en page"
 
-#: inc/customizer/customizer.php:588
+#: inc/customizer/customizer.php:679
 msgid "Footer Width"
 msgstr "Largeur du pied de page"
 
-#: inc/customizer/customizer.php:585
+#: inc/customizer/customizer.php:676
 msgid "Single Content Width"
 msgstr "Largeur du contenu unique"
 
-#: inc/customizer/customizer.php:582
+#: inc/customizer/customizer.php:673
 msgid "Content Width"
 msgstr "Largeur du contenu"
 
-#: inc/customizer/customizer.php:579
+#: inc/customizer/customizer.php:670
 msgid "Featured Links Width"
 msgstr "Largeur des liens mis en avant"
 
-#: inc/customizer/customizer.php:576
+#: inc/customizer/customizer.php:667
 msgid "Featured Slider Width"
 msgstr "Largeur du diaporama mis en avant"
 
-#: inc/customizer/customizer.php:568
+#: inc/customizer/customizer.php:659
 msgid "Header Width"
 msgstr "Largeur de l’en-tête"
 
-#: inc/customizer/customizer.php:564 inc/customizer/customizer.php:572
+#: inc/customizer/customizer.php:655 inc/customizer/customizer.php:663
 msgid "Boxed"
 msgstr "En boîte"
 
-#: inc/customizer/customizer.php:563
+#: inc/customizer/customizer.php:654
 msgid "Contained"
 msgstr "Confiné"
 
-#: inc/customizer/customizer.php:562 inc/customizer/customizer.php:571
+#: inc/customizer/customizer.php:653 inc/customizer/customizer.php:662
 msgid "Full"
 msgstr "Complet"
 
-#: inc/customizer/customizer.php:550
+#: inc/customizer/customizer.php:641
 msgid "Enable Sticky Sidebar"
 msgstr "Activer la colonne latérale épinglée"
 
-#: inc/customizer/customizer.php:547
+#: inc/customizer/customizer.php:638
 msgid "Sidebar Width"
 msgstr "Largeur de la colonne latérale"
 
-#: inc/customizer/customizer.php:541
+#: inc/customizer/customizer.php:632
 msgid "General Layouts"
 msgstr "Mise en page générale"
 
-#: inc/customizer/customizer.php:492
+#: inc/customizer/customizer.php:582
 msgid "Accent"
 msgstr "Contraste"
 
-#: inc/customizer/customizer.php:486 inc/customizer/customizer.php:527
+#: inc/customizer/customizer.php:576 inc/customizer/customizer.php:617
 msgid "Colors"
 msgstr "Couleurs"
 
-#: inc/about/about-ashe.php:82 inc/about/about-ashe.php:248
+#: inc/about/about-ashe.php:73 inc/about/about-ashe.php:293
 msgid "Demo Content"
 msgstr "Contenu de démonstration"
 
-#: inc/customizer/customizer.php:312
+#: inc/customizer/customizer.php:380
 msgid "There are lots of reasons to upgrade to Pro version. Unlimited custom Colors, rich Typography options, multiple variation of Blog Feed layout and way much more. Also Premium Support included."
 msgstr "Il y a de nombreuses raisons pour passer à la version Pro. Des couleurs personnalisées illimitées, de riches options de typographie, des variations multiples de la mise en page des flux de blog et bien plus encore. Le support Premium est également inclus."
 
-#: inc/customizer/customizer.php:311
+#: inc/customizer/customizer.php:379
 msgid "Upgrade"
 msgstr "Mettre à niveau"
 
@@ -1406,149 +1478,149 @@ msgstr "Mettre à niveau"
 msgid "See Ashe PRO"
 msgstr "Voir Ashe PRO"
 
-#: functions.php:168 inc/about/about-ashe.php:125 inc/about/about-ashe.php:544
+#: functions.php:189 inc/about/about-ashe.php:141 inc/about/about-ashe.php:592
 msgid "Install Now"
 msgstr "Installer maintenant"
 
-#: inc/about/about-ashe.php:541
+#: inc/about/about-ashe.php:589
 msgid "Installed"
 msgstr "Installée"
 
-#: inc/about/about-ashe.php:479
+#: inc/about/about-ashe.php:527
 msgid "Sticky Navigation"
 msgstr "Navigation épinglée"
 
-#: inc/about/about-ashe.php:425
-msgid "800+ Google Fonts"
-msgstr "+800 Google Fonts"
-
-#: inc/about/about-ashe.php:432
+#: inc/about/about-ashe.php:480
 msgid "Header Background Image/Color/Video"
 msgstr "Image/Couleur/Vidéo d’arrière-plan d’en-tête  "
 
-#: inc/about/about-ashe.php:419
+#: inc/about/about-ashe.php:467
 msgid "Ashe Pro"
 msgstr "Ashe Pro"
 
-#: inc/about/about-ashe.php:415 inc/customizer/customizer.php:313
+#: inc/about/about-ashe.php:463 inc/customizer/customizer.php:381
 msgid "Get Ashe Pro"
 msgstr "Obtenir Ashe Pro"
 
-#: inc/about/about-ashe.php:380 inc/about/about-ashe.php:383
-#: inc/customizer/customizer.php:346 inc/customizer/customizer.php:348
+#: inc/about/about-ashe.php:428 inc/about/about-ashe.php:431
+#: inc/customizer/customizer.php:414 inc/customizer/customizer.php:416
 msgid "Changelog"
 msgstr "Journal des modifications"
 
-#: inc/about/about-ashe.php:77
+#: inc/about/about-ashe.php:68
 msgid "Read Full Documentation"
 msgstr "Lire la documentation"
 
 #. translators: %s theme name
-#: inc/about/about-ashe.php:74 inc/customizer/customizer.php:331
+#: inc/about/about-ashe.php:65 inc/customizer/customizer.php:399
 msgid "Need more details? Please check our full documentation for detailed information on how to use %s."
 msgstr "Besoin de plus de détails ? Consultez notre documentation complète sur la méthode d’utilisation de %s."
 
-#: inc/about/about-ashe.php:71 inc/customizer/customizer.php:326
-#: inc/customizer/customizer.php:334
+#: inc/about/about-ashe.php:62 inc/customizer/customizer.php:394
+#: inc/customizer/customizer.php:402
 msgid "Documentation"
 msgstr "Documentation"
 
-#: inc/about/about-ashe.php:374
+#: inc/about/about-ashe.php:422
 msgid "Go to Support Forums"
 msgstr "Aller aux forums de support"
 
-#: inc/about/about-ashe.php:373
+#: inc/about/about-ashe.php:421
 msgid "Before asking a questions it's highly recommended to search on forums, but if you can't find the solution feel free to create a new topic."
 msgstr "Avant de poser une question, il est fortement recommandé de rechercher sur les forums, mais si vous ne trouvez pas la solution n’hésitez pas à créer un nouveau sujet."
 
-#: inc/about/about-ashe.php:371
+#: inc/about/about-ashe.php:419
 msgid "Forums"
 msgstr "Forums"
 
-#: inc/about/about-ashe.php:99
+#: inc/about/about-ashe.php:90
+msgid "Woocommerce"
+msgstr "WooCommerce"
+
+#: inc/about/about-ashe.php:115
 msgid "Theme Customizer"
 msgstr "Personnalisation du thème"
 
-#: inc/about/about-ashe.php:59
+#: inc/about/about-ashe.php:52
 msgid "Free vs Pro"
 msgstr "Gratuit Vs Pro"
 
-#: inc/about/about-ashe.php:56 inc/customizer/customizer.php:316
+#: inc/about/about-ashe.php:49 inc/customizer/customizer.php:384
 msgid "Support"
 msgstr "Support"
 
-#: inc/about/about-ashe.php:47
+#: inc/about/about-ashe.php:40
 msgid "Getting Started"
-msgstr "Guide de démarrage"
+msgstr "Premiers pas"
 
-#: inc/about/about-ashe.php:5 inc/customizer/customizer.php:381
+#: inc/about/about-ashe.php:5 inc/customizer/customizer.php:449
 msgid "About Ashe"
 msgstr "À propos de Ashe"
 
-#: functions.php:709
+#: functions.php:813
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération."
 
-#: functions.php:677 functions.php:700
+#: functions.php:781 functions.php:804
 msgid "[Edit]"
 msgstr "[Modifier]"
 
-#: functions.php:676 functions.php:697
+#: functions.php:780 functions.php:801
 msgid "&nbsp;at&nbsp;"
 msgstr "&nbsp;à&nbsp;"
 
-#: functions.php:674
+#: functions.php:778
 msgid "Pingback:"
 msgstr "Ping :"
 
-#: functions.php:577
+#: functions.php:680
 msgid "Type then hit Enter..."
 msgstr "Saisissez votre texte et appuyez sur Entrée..."
 
-#: functions.php:577
+#: functions.php:680
 msgid "Search..."
 msgstr "Recherche…"
 
 #. translators: %s: Name of current post
-#: functions.php:394 functions.php:410
+#: functions.php:415 functions.php:431
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Continuer la lecture de <span class=\"screen-reader-text\">« %s »</span>"
 
-#: functions.php:323
+#: functions.php:344
 msgid "Add widgets here to appear in your footer."
 msgstr "Ajoutez ici des widgets qui apparaîtront dans votre pied de page."
 
-#: functions.php:321
+#: functions.php:342
 msgid "Footer Widgets"
 msgstr "Widgets de pied de page"
 
-#: functions.php:313
+#: functions.php:334
 msgid "Add widgets here to appear in your alternative/fixed sidebar."
 msgstr "Ajoutez ici des widgets ici qui apparaîtront dans votre colonne latérale alternative/fixe."
 
-#: functions.php:311
+#: functions.php:332
 msgid "Sidebar Alt"
 msgstr "Colonne latérale Alt"
 
-#: functions.php:293 functions.php:303
+#: functions.php:314 functions.php:324
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Ajoutez ici des widgets qui apparaîtront dans votre colonne latérale."
 
-#: functions.php:236 functions.php:244 functions.php:252 functions.php:260
+#: functions.php:257 functions.php:265 functions.php:273 functions.php:281
 msgctxt "Google font: on or off"
 msgid "on"
 msgstr "sur"
 
 #. translators: %s theme name
-#: functions.php:111
+#: functions.php:128
 msgid "Get started with %s"
-msgstr "Démarrer avec %s"
+msgstr "Premiers pas avec %s"
 
-#: functions.php:51
+#: functions.php:52
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: functions.php:50
+#: functions.php:51
 msgid "Top Menu"
 msgstr "Menu du haut"
 
@@ -1578,17 +1650,20 @@ msgstr "Aucun commentaire"
 msgid "Page not found!"
 msgstr "Page non trouvée !"
 
+#. Author URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://wp-royal-themes.com/"
+msgstr "https://wp-royal-themes.com/"
+
 #. Author of the theme
+#: style.css
 #, gp-priority: low
 msgid "WP Royal"
 msgstr "WP Royal"
 
 #. Theme URI of the theme
+#: style.css
 #, gp-priority: low
-msgid "https://wp-royal.com/themes/item-ashe-free/"
+msgid "https://wp-royal-themes.com/themes/item-ashe-free/"
 msgstr "https://wp-royal.com/themes/item-ashe-free/"
-
-#. Author URI of the theme
-#, gp-priority: low
-msgid "https://wp-royal.com/"
-msgstr "https://wp-royal.com/"

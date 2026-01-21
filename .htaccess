@@ -1,4 +1,3 @@
-
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
 # dynamically generated, and should only be modified via WordPress filters.
@@ -14,3 +13,56 @@ RewriteRule . /ChicDressing/index.php [L]
 </IfModule>
 
 # END WordPress
+
+# --- OPTIMISATION DU CACHE (Nettoyé et Unifié) ---
+
+# 1. Définition des durées d'expiration (mod_expires)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images & Icônes (1 an)
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    
+    # Polices d'écriture (1 an)
+    ExpiresByType font/woff2 "access plus 1 year"
+    
+    # CSS & JS (1 mois - suffisant si vous modifiez souvent, sinon mettez 1 year)
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    
+    # Autres
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType application/x-shockwave-flash "access plus 1 month"
+    
+    # Par défaut
+    ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# 2. En-têtes de Cache-Control (mod_headers)
+<IfModule mod_headers.c>
+    # Pour les fichiers statiques (Images, Fonts, CSS, JS)
+    # On force le cache public et immutable (très performant)
+    <FilesMatch "\.(ico|jpe?g|png|gif|webp|css|js|woff2|svg)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Pour le HTML (Pages) : Cache court (2h) pour voir les modifs rapidement
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=7200, public"
+    </FilesMatch>
+
+    # Pour le PHP (Dynamique) : PAS de cache navigateur pour éviter les bugs
+    <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+        Header unset Cache-Control
+        Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+        Header set Pragma "no-cache"
+    </FilesMatch>
+</IfModule>

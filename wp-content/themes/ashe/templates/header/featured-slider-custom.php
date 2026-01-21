@@ -65,7 +65,7 @@ $slider_data .= '}';
 
 	<div class="slider-item">
 
-		<div class="slider-item-bg" style="background-image:url( <?php echo wp_get_attachment_image_src( $repeater_item->image_url, 'full' )[0]; ?>);"></div>
+		<div class="slider-item-bg" style="background-image:url( <?php echo wp_get_attachment_image_src( $repeater_item->image_url, 'large' )[0]; ?>);"></div>
 
 		<div class="cv-container image-overlay">
 			<div class="cv-outer">

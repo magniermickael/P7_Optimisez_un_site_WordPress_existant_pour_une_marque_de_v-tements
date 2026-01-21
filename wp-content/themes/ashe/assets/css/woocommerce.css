@@ -571,13 +571,13 @@ a.added_to_cart.wc-forward {
 }
 
 .woocommerce .page-content nav.woocommerce-pagination ul li a.prev:after {
-    font-family: FontAwesome;
-    content: "\f177";
+    font-family: "Font Awesome 6 Free";
+    content: "\f060";
 }
 
 .woocommerce .page-content nav.woocommerce-pagination ul li a.next:after {
-    font-family: FontAwesome;
-    content: "\f178";
+    font-family: "Font Awesome 6 Free";
+    content: "\f061";
 }
 
 .woocommerce-ordering select {

@@ -1,16 +1,28 @@
-# Ignorer le cœur de WordPress
-/wp-admin/
-/wp-includes/
-/wp-*.php
+# WordPress uploads 
+wp-content/uploads/
 
-# Ignorer les plugins et les uploads
-/wp-content/plugins/
-/wp-content/uploads/
+# WooCommerce logs 
+wp-content/uploads/wc-logs/
+wp-content/uploads/wc-logs/*.log
 
-# Ignorer les fichiers de config sensibles
-wp-config.php
-.env
+# Cache Autoptimize / cache plugins 
+wp-content/cache/
+wp-content/cache/**
 
-# Ignorer d’autres fichiers temporaires ou de log
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
 *.log
-*.sql
+
+# All-in-One WP Migration backups (très gros)
+wp-content/ai1wm-backups/
+wp-content/ai1wm-backups/**
+*.wpress
+
+# Autoptimize cache explicite
+wp-content/cache/autoptimize/
+wp-content/cache/autoptimize/**
