@@ -17,3 +17,12 @@ Thumbs.db
 
 # Logs
 *.log
+
+# All-in-One WP Migration backups (très gros)
+wp-content/ai1wm-backups/
+wp-content/ai1wm-backups/**
+*.wpress
+
+# Autoptimize cache explicite
+wp-content/cache/autoptimize/
+wp-content/cache/autoptimize/**

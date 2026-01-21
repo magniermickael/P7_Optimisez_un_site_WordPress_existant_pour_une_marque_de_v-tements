@@ -362,14 +362,14 @@ function limit_home_product_thumb_srcset($sources, $size_array, $image_src, $ima
 /* ==================================================== */
 /* 9. CHARGEMENT DIFFÉRÉ DE LA CARTE GOOGLE MAP         */
 /* ==================================================== */
-add_action('wp_footer', 'lazy_load_home_map', 50); // Priorité 50 pour être en fin de footer
 
+add_action('wp_footer', 'lazy_load_home_map', 50);  // Priorité 50 pour être en fin de footer
+// Chargement différé de la carte Google Map sur l'accueil
 function lazy_load_home_map()
-{ // Chargement différé de la carte Google Map sur l'accueil
-    if (!is_home() && !is_front_page()) return; // Seulement sur l'accueil
+{ // Fonction de chargement différé 
+    if (!is_home() && !is_front_page()) return;  // Seulement sur l'accueil
 ?>
     <script>
-        // Script pour charger la carte Google Map de manière différée
         document.addEventListener("DOMContentLoaded", () => { // Attendre que le DOM soit chargé
             const iframe = document.querySelector('iframe.cd-map[data-src]'); // Sélectionne l'iframe de la carte avec data-src
             if (!iframe) return; // Si pas d'iframe, on sort
@@ -380,25 +380,24 @@ function lazy_load_home_map()
                 iframe.dataset.loaded = "1"; // Marque comme chargé
             }; // Fin de la fonction loadMap
 
-            // Utilisation d'Intersection Observer pour charger quand l'iframe est proche du viewport
+            // On utilise uniquement l'IntersectionObserver
             if ("IntersectionObserver" in window) { // Si le navigateur supporte Intersection Observer
-                const io = new IntersectionObserver((entries) => { // Crée un nouvel observateur
+                const io = new IntersectionObserver((entries, observer) => { // Crée un nouvel observateur
                     entries.forEach(e => { // Pour chaque entrée
                         if (e.isIntersecting) { // Si l'iframe est dans le viewport
                             loadMap(); // Charge la carte
+                            observer.disconnect(); // On arrête d'observer une fois chargé pour libérer la mémoire
                         } // Fin de la condition isIntersecting
                     }); // Fin de la boucle des entrées
-                }, {
-                    rootMargin: "200px"
-                }); // Marge pour précharger avant d'entrer dans le viewport
+                }, { // Options de l'observateur
+                    rootMargin: "200px" // Commence à charger 200px avant que la carte n'arrive à l'écran
+                }); // Fin des options
 
                 io.observe(iframe); // Observe l'iframe
-            } else {
-                // Fallback : chargement après un délai de 3 secondes
-                setTimeout(loadMap, 3000); // Charge la carte après 3 secondes
-            } // Fin du else
+            } // Fin du if IntersectionObserver
+
         }); // Fin de l'événement DOMContentLoaded
-    </script> <!-- Fin du script de chargement différé -->
+    </script>
 <?php
 } // Fin de la fonction lazy_load_home_map
 
@@ -433,56 +432,130 @@ function cd_skip_lazy_for_gutenberg_galleries($content)
 
 // Ajoute des styles CSS pour corriger les problèmes de contraste détectés par Lighthouse
 add_action('wp_head', function () { ?> <!-- Ajoute dans le head -->
-  <style id="chicdressing_lh_contrast_override"> /* Fix contraste Lighthouse pour le thème Chic Dressing */
-    /* Règles de contraste pour améliorer l'accessibilité et la lisibilité */   
-    /* 1) Corps de texte */
-    
-    html body .page-content,
-    html body .page-content p,
-    html body .post-content p,
-    html body .post-excerpt p,
-    html body .article-content p,
-    html body li article .post-content > p,
-    html body p{ /* Cible les paragraphes dans le contenu des pages et articles */
-      color: #4a4a4a !important; /* Texte en gris foncé pour un meilleur contraste */
-      font-size: 16px !important; /* Taille de police augmentée pour une meilleure lisibilité */
-      line-height: 1.6 !important; /* Hauteur de ligne augmentée pour une meilleure lisibilité */
-    }   
+    <style id="chicdressing_lh_contrast_override">
+        /* Fix contraste Lighthouse pour le thème Chic Dressing */
+        /* Règles de contraste pour améliorer l'accessibilité et la lisibilité */
+        /* 1) Corps de texte */
 
-    /* 2) Catégories (blog) */
-    html body header.post-header .post-categories,
-    html body header.post-header .post-categories a,
-    html body header.post-header .post-categories a[rel="category tag"],
-    html body li article header.post-header > div.post-categories,
-    html body li article header.post-header > div.post-categories a{ /* Cible les catégories dans le header des articles */
-      color: #111111 !important; /* Texte en noir foncé pour un meilleur contraste */
-    }
+        html body .page-content,
+        html body .page-content p,
+        html body .post-content p,
+        html body .post-excerpt p,
+        html body .article-content p,
+        html body li article .post-content>p,
+        html body p {
+            /* Cible les paragraphes dans le contenu des pages et articles */
+            color: #4a4a4a !important;
+            /* Texte en gris foncé pour un meilleur contraste */
+            font-size: 16px !important;
+            /* Taille de police augmentée pour une meilleure lisibilité */
+            line-height: 1.6 !important;
+            /* Hauteur de ligne augmentée pour une meilleure lisibilité */
+        }
 
-    /* 3) Date (blog) */
-    html body header.post-header .post-meta .post-date,
-    html body header.post-header span.post-date{ /* Cible la date dans le header des articles */
-      color: #444444 !important; /* Texte en gris foncé pour un meilleur contraste */
-    }
+        /* 2) Catégories (blog) */
+        html body header.post-header .post-categories,
+        html body header.post-header .post-categories a,
+        html body header.post-header .post-categories a[rel="category tag"],
+        html body li article header.post-header>div.post-categories,
+        html body li article header.post-header>div.post-categories a {
+            /* Cible les catégories dans le header des articles */
+            color: #111111 !important;
+            /* Texte en noir foncé pour un meilleur contraste */
+        }
 
-    /* 4) Widget RPWWT - Catégories */
-    html body #rpwwt-recent-posts-widget-with-thumbnails-1 .rpwwt-post-categories,
-    html body #rpwwt-recent-posts-widget-with-thumbnails-1 .rpwwt-post-categories a{ /* Cible les catégories dans le widget RPWWT */
-      color: #444444 !important; /* Texte en gris foncé pour un meilleur contraste */
-    }
+        /* 3) Date (blog) */
+        html body header.post-header .post-meta .post-date,
+        html body header.post-header span.post-date {
+            /* Cible la date dans le header des articles */
+            color: #444444 !important;
+            /* Texte en gris foncé pour un meilleur contraste */
+        }
 
-    /* 5) “Lire la suite” (blog) */
-    html body .read-more > a,
-    html body .read-more a,
-    html body a.read-more{ /* Cible les liens "Lire la suite" */
-      color: #111111 !important; /* Texte en noir foncé pour un meilleur contraste */
-    }
+        /* 4) Widget RPWWT - Catégories */
+        html body #rpwwt-recent-posts-widget-with-thumbnails-1 .rpwwt-post-categories,
+        html body #rpwwt-recent-posts-widget-with-thumbnails-1 .rpwwt-post-categories a {
+            /* Cible les catégories dans le widget RPWWT */
+            color: #444444 !important;
+            /* Texte en gris foncé pour un meilleur contraste */
+        }
 
-    /* 6) WooCommerce “Ajouter au panier” boutons */
-    html body .woocommerce ul.products li.product > a.button,
-    html body .woocommerce ul.products li.product > a.button.add_to_cart_button,
-    html body .woocommerce ul.products li.product > a.button.ajax_add_to_cart{ /* Cible les boutons "Ajouter au panier" dans les listes de produits WooCommerce */
-      color: #111111 !important; /* Texte en noir foncé pour un meilleur contraste */
-    }
+        /* 5) “Lire la suite” (blog) */
+        html body .read-more>a,
+        html body .read-more a,
+        html body a.read-more {
+            /* Cible les liens "Lire la suite" */
+            color: #111111 !important;
+            /* Texte en noir foncé pour un meilleur contraste */
+        }
 
-  </style> <!-- Fin du style de correction de contraste -->
+        /* 6) WooCommerce “Ajouter au panier” boutons */
+        html body .woocommerce ul.products li.product>a.button,
+        html body .woocommerce ul.products li.product>a.button.add_to_cart_button,
+        html body .woocommerce ul.products li.product>a.button.ajax_add_to_cart {
+            /* Cible les boutons "Ajouter au panier" dans les listes de produits WooCommerce */
+            color: #111111 !important;
+            /* Texte en noir foncé pour un meilleur contraste */
+        }
+    </style> <!-- Fin du style de correction de contraste -->
 <?php }, 9999); // Priorité très élevée pour être après ashe_dynamic_css
+
+
+/* ==================================================== */
+/* 12. WOOCOMMERCE : DÉSACTIVE WC-CART-FRAGMENTS        */
+/* ==================================================== */
+// Désactive le script wc-cart-fragments sur les pages non WooCommerce pour améliorer les performances
+add_action('wp_enqueue_scripts', function () { // Fonction anonyme pour désactiver wc-cart-fragments
+    if (!is_woocommerce() && !is_cart() && !is_checkout()) { // Si on n'est pas sur une page WooCommerce, panier ou checkout
+        wp_dequeue_script('wc-cart-fragments'); // Désenregistre le script
+        wp_deregister_script('wc-cart-fragments'); // Désactive le script
+    } // Fin de la condition
+}, 100); // Priorité 100 pour s'assurer que c'est après tous les enregistrements
+
+/* ==================================================== */
+/* 13. PRÉCHARGEMENT INTELLIGENT (MOBILE VS DESKTOP)    */
+/* ==================================================== */
+//  Précharge l'image du slider adaptée au device (mobile ou desktop) sur l'accueil
+add_action('wp_head', 'preload_responsive_slider_image', 1);
+// Priorité 1 pour être en tout début du head
+function preload_responsive_slider_image()
+{ // Précharge l'image du slider adaptée au device
+    // Uniquement sur la page d'accueil
+    if (!is_home() && !is_front_page()) return;
+
+    // Déterminer si on est sur mobile ou desktop
+    $is_mobile = wp_is_mobile(); // Utilise la fonction native de WordPress
+
+    // Arguments pour récupérer le dernier article du slider
+    $args = array( // Arguments de la requête
+        'posts_per_page' => 1, // On ne veut qu'un seul post
+        'ignore_sticky_posts' => true, // Ignorer les posts épinglés
+        'meta_query' => array( // On cherche les posts avec une image mise en avant
+            array( // Condition meta_query
+                'key' => '_thumbnail_id', // Clé meta pour l'image mise en avant
+                'compare' => 'EXISTS' // On veut ceux qui ont une image
+            ) // Fin de la condition meta_query
+        ) // Fin de meta_query
+    ); // Fin des arguments
+
+    $query = new WP_Query($args); // Nouvelle requête WP_Query
+    // Boucle pour récupérer l'image
+    if ($query->have_posts()) { // Si on a des posts
+        while ($query->have_posts()) { // Boucle sur les posts
+            $query->the_post(); // Prépare le post courant
+
+            // Si Mobile :  On cherche l'image de taille moyenne/mobile
+            // Si Desktop  : On cherche l'image de taille moyenne_large/desktop
+            $size = $is_mobile ? 'medium' : 'medium_large';  // Choix de la taille en fonction du device
+
+            // On récupère l'URL de l'image
+            $image_url = get_the_post_thumbnail_url(get_the_ID(), $size); // Récupère l'URL de l'image mise en avant
+
+            if ($image_url) { // Si on a une URL d'image
+                // On génère la balise de préchargement exacte
+                echo '<link rel="preload" as="image" href="' . esc_url($image_url) . '" fetchpriority="high">'; // Balise de préchargement avec priorité haute
+            } // Fin de la condition URL image
+        } // Fin de la boucle des posts
+        wp_reset_postdata(); // Réinitialise les données postales
+    } // Fin de la condition des posts
+} // Fin de la fonction preload_responsive_slider_image
