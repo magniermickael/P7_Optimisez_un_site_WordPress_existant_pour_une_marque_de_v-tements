@@ -7,7 +7,7 @@
 					<!-- Affichage du logo personnalisé ou du nom du site -->
 					<?php if (has_custom_logo()) : // Si un logo personnalisé est défini
 						$custom_logo_id = get_theme_mod('custom_logo'); // Récupère l'ID du logo personnalisé
-						$custom_logo = wp_get_attachment_image_src($custom_logo_id, 'medium_large');// On utilise "medium_large" pour de meilleures performances
+						$custom_logo = wp_get_attachment_image($custom_logo_id, 'medium');// On utilise "medium" pour de meilleures performances
 					?>
 						<a href="<?php echo esc_url(home_url('/')); ?>" class="logo-img"> <!-- Lien vers la page d'accueil -->
 							<img
@@ -15,7 +15,8 @@
 								width="<?php echo esc_attr($custom_logo[1]); ?>"
 								height="<?php echo esc_attr($custom_logo[2]); ?>"
 								alt="<?php echo esc_attr(get_bloginfo('name')); ?>"
-								loading="lazy"
+								loading="eager"
+								decoding="async"
 								fetchpriority="high"> <!-- Image du logo avec attributs optimisés -->
 						</a> <!-- Fin du lien vers la page d'accueil -->
 					<?php else : ?> <!-- Sinon, affiche le nom du site -->

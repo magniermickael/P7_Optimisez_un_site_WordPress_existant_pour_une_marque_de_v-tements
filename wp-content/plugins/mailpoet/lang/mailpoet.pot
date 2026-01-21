@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the MailPoet plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: MailPoet 5.17.6\n"
+"Project-Id-Version: MailPoet 5.18.0\n"
 "Report-Msgid-Bugs-To: http://support.mailpoet.com/\n"
 "Last-Translator: MailPoet i18n (https://www.transifex.com/organization/wysija)\n"
 "Language-Team: MailPoet i18n <https://www.transifex.com/organization/wysija>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-01-12T14:58:27+00:00\n"
+"POT-Creation-Date: 2026-01-19T13:02:40+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -7065,98 +7065,98 @@ msgstr ""
 msgid "Failed to resend! The email is not active. Please activate it first."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:99
-#: lib/API/JSON/v1/Services.php:175
+#: lib/API/JSON/v1/Services.php:100
+#: lib/API/JSON/v1/Services.php:185
 msgid "Please specify a key."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:126
+#: lib/API/JSON/v1/Services.php:132
 msgid "Your MailPoet Sending Service key has been successfully validated"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:128
-#: lib/API/JSON/v1/Services.php:194
+#: lib/API/JSON/v1/Services.php:134
+#: lib/API/JSON/v1/Services.php:209
 msgid "Your Premium key has been successfully validated, but is not valid for MailPoet Sending Service"
 msgstr ""
 
 #. translators: %s is the expiration date.
-#: lib/API/JSON/v1/Services.php:132
+#: lib/API/JSON/v1/Services.php:138
 msgid "Your MailPoet Sending Service key expires on %s!"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:147
+#: lib/API/JSON/v1/Services.php:153
 #: assets/dist/js/commons.js:9
 msgid "Your key is not valid for the MailPoet Sending Service"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:150
+#: lib/API/JSON/v1/Services.php:156
 msgid "Your MailPoet Sending Service key is already <a>used on another site</a>"
 msgstr ""
 
 #. translators: %s is the error message.
-#: lib/API/JSON/v1/Services.php:155
+#: lib/API/JSON/v1/Services.php:161
 msgid "Error validating MailPoet Sending Service key, please try again later (%s)."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:158
+#: lib/API/JSON/v1/Services.php:164
 msgid "Note that it doesn't work on localhost."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:192
+#: lib/API/JSON/v1/Services.php:207
 msgid "Your Premium key has been successfully validated"
 msgstr ""
 
 #. translators: %s is the expiration date.
-#: lib/API/JSON/v1/Services.php:198
+#: lib/API/JSON/v1/Services.php:213
 msgid "Your Premium key expires on %s"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:216
+#: lib/API/JSON/v1/Services.php:231
 #: assets/dist/js/commons.js:9
 msgid "Your key is not valid for MailPoet Premium"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:219
+#: lib/API/JSON/v1/Services.php:234
 msgid "Your Premium key is already <a>used on another site</a>"
 msgstr ""
 
 #. translators: %s is the error message.
-#: lib/API/JSON/v1/Services.php:225
+#: lib/API/JSON/v1/Services.php:240
 msgid "Error validating Premium key, please try again later (%s)"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:262
+#: lib/API/JSON/v1/Services.php:291
 #: assets/dist/js/commons.js:9
 msgid "MailPoet Sending Service is not active."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:267
+#: lib/API/JSON/v1/Services.php:296
 msgid "Sender email address is not set."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:278
+#: lib/API/JSON/v1/Services.php:307
 msgid "No FROM email addresses are authorized."
 msgstr ""
 
 #. translators: %s is the email address, which is not authorized.
-#: lib/API/JSON/v1/Services.php:283
+#: lib/API/JSON/v1/Services.php:312
 msgid "Sender email address '%s' is not authorized."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:292
+#: lib/API/JSON/v1/Services.php:321
 msgid "Sending of congratulatory email failed."
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:336
+#: lib/API/JSON/v1/Services.php:365
 msgid "Service unavailable"
 msgstr ""
 
-#: lib/API/JSON/v1/Services.php:339
+#: lib/API/JSON/v1/Services.php:368
 msgid "Contact your hosting support to check the connection between your host and https://bridge.mailpoet.com"
 msgstr ""
 
 #. translators: %s is the code.
-#: lib/API/JSON/v1/Services.php:343
+#: lib/API/JSON/v1/Services.php:372
 msgctxt "Error code (inside parentheses)"
 msgid "code: %s"
 msgstr ""
@@ -8815,6 +8815,7 @@ msgid "Subscribe"
 msgstr ""
 
 #: lib/Captcha/CaptchaFormRenderer.php:159
+#: lib/Form/AssetsController.php:99
 msgid "Type in the characters you see in the picture above:"
 msgstr ""
 
@@ -8823,10 +8824,12 @@ msgid "CAPTCHA"
 msgstr ""
 
 #: lib/Captcha/CaptchaFormRenderer.php:201
+#: lib/Form/AssetsController.php:100
 msgid "Reload CAPTCHA"
 msgstr ""
 
 #: lib/Captcha/CaptchaFormRenderer.php:202
+#: lib/Form/AssetsController.php:101
 msgid "Play CAPTCHA"
 msgstr ""
 
@@ -8873,7 +8876,7 @@ msgstr ""
 msgid "CAPTCHA verification failed."
 msgstr ""
 
-#: lib/Captcha/Validator/CaptchaValidator.php:56
+#: lib/Captcha/Validator/CaptchaValidator.php:57
 msgid "Please fill in the CAPTCHA."
 msgstr ""
 
@@ -8881,7 +8884,7 @@ msgstr ""
 msgid "Please regenerate the CAPTCHA."
 msgstr ""
 
-#: lib/Captcha/Validator/CaptchaValidator.php:76
+#: lib/Captcha/Validator/CaptchaValidator.php:74
 msgid "The characters entered do not match with the previous CAPTCHA."
 msgstr ""
 
